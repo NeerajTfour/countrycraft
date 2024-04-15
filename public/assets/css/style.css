@@ -1,0 +1,760 @@
+:root {
+    --color__newsletter-bg: #ddd3cc;
+    --color__footer-bg: #ede7e2;
+    --color__footer-bg--copy: #ede7e2;
+    --color__input-border: #575757;
+    --color__promo-newsletter-bg: #f0f0f0;
+    --color__footer-brand-bg: #fff;
+    --color__heading: #df6808;
+}
+:root {
+    /* Fonts */
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-primary: "Source Sans Pro", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+
+    /* Colors */
+    /* The *-rgb color names are simply the RGB converted value of the corresponding color for use in the rgba() function */
+
+    /* Default text color */
+    --color-default: #1a1f24;
+    --color-default-rgb: 26, 31, 36;
+
+    /* Defult links color */
+    --color-links: #0ea2bd;
+    --color-links-hover: #1ec3e0;
+
+    /* Primay colors */
+    --color-primary: #0ea2bd;
+    --color-primary-light: #1ec3e0;
+    --color-primary-dark: #0189a1;
+
+    --color-primary-rgb: 14, 162, 189;
+    --color-primary-light-rgb: 30, 195, 224;
+    --color-primary-dark-rgb: 1, 137, 161;
+
+    /* Secondary colors */
+    --color-secondary: #485664;
+    --color-secondary-light: #8f9fae;
+    --color-secondary-dark: #3a4753;
+
+    --color-secondary-rgb: 72, 86, 100;
+    --color-secondary-light-rgb: 143, 159, 174;
+    --color-secondary-dark-rgb: 58, 71, 83;
+
+    /* General colors */
+    --color-blue: #0d6efd;
+    --color-blue-rgb: 13, 110, 253;
+
+    --color-indigo: #6610f2;
+    --color-indigo-rgb: 102, 16, 242;
+
+    --color-purple: #6f42c1;
+    --color-purple-rgb: 111, 66, 193;
+
+    --color-pink: #f3268c;
+    --color-pink-rgb: 243, 38, 140;
+
+    --color-red: #df1529;
+    --color-red-rgb: 223, 21, 4;
+
+    --color-orange: #fd7e14;
+    --color-orange-rgb: 253, 126, 20;
+
+    --color-yellow: #ffc107;
+    --color-yellow-rgb: 255, 193, 7;
+
+    --color-green: #059652;
+    --color-green-rgb: 5, 150, 82;
+
+    --color-teal: #20c997;
+    --color-teal-rgb: 32, 201, 151;
+
+    --color-cyan: #0dcaf0;
+    --color-cyan-rgb: 13, 202, 240;
+
+    --color-white: #ffffff;
+    --color-white-rgb: 255, 255, 255;
+
+    --color-gray: #6c757d;
+    --color-gray-rgb: 108, 117, 125;
+
+    --color-black: #000000;
+    --color-black-rgb: 0, 0, 0;
+}
+
+/*--------------------------------------------------------------
+# 3. Set color and background class names
+--------------------------------------------------------------*/
+/* Fonts */
+.font-default {
+    font-family: var(--font-default) !important;
+}
+.font-primary {
+    font-family: var(--font-primary) !important;
+}
+.font-secondary {
+    font-family: var(--font-secondary) !important;
+}
+
+/* Text Colors */
+.color-default {
+    color: var(--color-default) !important;
+}
+.color-links {
+    color: var(--color-links) !important;
+}
+.color-links:hover {
+    color: var(--color-links-hover) !important;
+}
+.color-primary {
+    color: var(--color-primary) !important;
+}
+.color-primary-light {
+    color: var(--color-primary-light) !important;
+}
+.color-primary-dark {
+    color: var(--color-primary-dark) !important;
+}
+.color-secondary {
+    color: var(--color-secondary) !important;
+}
+.color-secondary-light {
+    color: var(--color-secondary-light) !important;
+}
+.color-secondary-dark {
+    color: var(--color-secondary-dark) !important;
+}
+.color-blue {
+    color: var(--color-blue) !important;
+}
+.color-indigo {
+    color: var(--color-indigo) !important;
+}
+.color-purple {
+    color: var(--color-purple) !important;
+}
+.color-pink {
+    color: var(--color-pink) !important;
+}
+.color-red {
+    color: var(--color-red) !important;
+}
+.color-orange {
+    color: var(--color-orange) !important;
+}
+.color-yellow {
+    color: var(--color-yellow) !important;
+}
+.color-green {
+    color: var(--color-green) !important;
+}
+.color-teal {
+    color: var(--color-teal) !important;
+}
+.color-cyan {
+    color: var(--color-cyan) !important;
+}
+.color-white {
+    color: var(--color-white) !important;
+}
+.color-gray {
+    color: var(--color-gray) !important;
+}
+.color-black {
+    color: var(--color-black) !important;
+}
+
+/* Background Colors */
+.bg-default {
+    background-color: var(--color-default) !important;
+}
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+.bg-primary-light {
+    background-color: var(--color-primary-light) !important;
+}
+.bg-primary-dark {
+    background-color: var(--color-primary-dark) !important;
+}
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+.bg-secondary-light {
+    background-color: var(--color-secondary-light) !important;
+}
+.bg-secondary-dark {
+    background-color: var(--color-secondary-dark) !important;
+}
+.bg-blue {
+    background-color: var(--color-blue) !important;
+}
+.bg-indigo {
+    background-color: var(--color-indigo) !important;
+}
+.bg-purple {
+    background-color: var(--color-purple) !important;
+}
+.bg-pink {
+    background-color: var(--color-pink) !important;
+}
+.bg-red {
+    background-color: var(--color-red) !important;
+}
+.bg-orange {
+    background-color: var(--color-orange) !important;
+}
+.bg-yellow {
+    background-color: var(--color-yellow) !important;
+}
+.bg-green {
+    background-color: var(--color-green) !important;
+}
+.bg-teal {
+    background-color: var(--color-teal) !important;
+}
+.bg-cyan {
+    background-color: var(--color-cyan) !important;
+}
+.bg-white {
+    background-color: var(--color-white) !important;
+}
+.bg-gray {
+    background-color: var(--color-gray) !important;
+}
+.bg-black {
+    background-color: var(--color-black) !important;
+}
+
+.heading h1 {
+    /* color: red; */
+    color: var(--color__heading);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+.heading h1:after {
+    content: "";
+    background: #ec0a0a;
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto;
+    /* position: absolute; */
+}
+header {
+    position: static;
+    width: 100%;
+    height: 110px;
+}
+.button {
+    content: "info";
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/* Button hover effect */
+.button:hover {
+    background-color: #45a049; /* Darker green */
+}
+.pro {
+    position: static;
+    margin-top: 50px;
+}
+.pro ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.pro ul li a {
+    text-decoration: none;
+    line-height: 50px;
+}
+.card {
+    display: block;
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid brown;
+}
+.card h2 {
+    text-align: center;
+}
+.card p {
+    padding-top: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    word-spacing: 6px;
+}
+.c-banner-features {
+    flex-direction: row;
+    padding: 0;
+    column-gap: 15px;
+}
+.c-banner-features {
+    background-color: var(--banner-features__bg-color, #efefef);
+    max-width: var(--site__max-width);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 15px; */
+}
+.c-banner-features__image {
+    width: 100%;
+}
+p {
+    text-align: justify;
+}
+.c-section__title {
+    font-family: apercu pro, sans-serif;
+    flex-grow: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #191919;
+    line-height: 1.4;
+}
+.overlay img:hover {
+    border: 8px solid #291701;
+    transform: scale(1.1);
+    transition: 1s;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+.cont {
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.product-slider {
+    align-items: flex-start;
+    background: #eee;
+    display: flex;
+    flex-flow: row wrap;
+
+    @media (min-width: 768px) {
+        flex-flow: row nowrap;
+    }
+}
+
+.product-slider__category {
+    padding: 20px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 35%;
+    }
+}
+
+.product-slider__slider {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 65%;
+    }
+
+    .slick-list {
+        padding-right: 80px;
+        position: relative;
+    }
+}
+
+.product-slider__item {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+
+    img {
+        border: 1px solid #000;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* // Slick Styles */
+.slick-arrow {
+    background: #291701;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+
+    &.slick-prev {
+        left: 0;
+    }
+
+    &.slick-next {
+        right: 0;
+    }
+
+    &.slick-disabled {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) {
+    .c-banner-features__card {
+        width: 0;
+        flex: 1 1 0;
+    }
+
+    .c-banner-features__image-section {
+        max-width: 35%;
+    }
+
+    .c-banner-features__text-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+}
+/* .footer.content {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: auto;
+} */
+.footer {
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.footer .footer-content {
+    background: var(--color-secondary);
+    padding: 60px 0 30px 0;
+}
+
+.footer .footer-content .footer-info {
+    margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .footer-content .footer-info h3 span {
+    color: var(--color-primary);
+}
+
+.footer .footer-content .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+}
+
+.footer .footer-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.footer .footer-content h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--color-primary);
+    bottom: 0;
+    left: 0;
+}
+
+.footer .footer-content .footer-links {
+    margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-content .footer-links ul i {
+    padding-right: 2px;
+    color: var(--color-white);
+    font-size: 12px;
+    line-height: 1;
+}
+
+.footer .footer-content .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    padding-left: 5px;
+}
+.footer .footer-content .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-content .footer-links ul a {
+    color: rgba(var(--color-white-rgb), 0.7);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+    color: var(--color-white);
+}
+
+.footer .footer-content .footer-newsletter form {
+    margin-top: 30px;
+    background: var(--color-white);
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.footer .footer-content .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+}
+
+.footer
+    .footer-content
+    .footer-newsletter
+    form
+    input[type="email"]:focus-visible {
+    outline: none;
+}
+
+.footer .footer-content .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+}
+
+.footer .footer-content .footer-newsletter form input[type="submit"]:hover {
+    background: rgba(var(--color-primary-rgb), 0.85);
+}
+
+.footer .footer-legal {
+    padding: 30px 0;
+    background: var(--color-secondary-dark);
+}
+
+.footer .footer-legal .credits {
+    padding-top: 4px;
+    font-size: 13px;
+    color: var(--color-white);
+}
+
+.footer .footer-legal .credits a {
+    color: var(--color-primary-light);
+}
+
+.footer .footer-legal .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(var(--color-white-rgb), 0.1);
+    color: var(--color-white);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer .footer-legal .social-links a:hover {
+    background: var(--color-primary);
+    text-decoration: none;
+}
+.contact .map {
+    margin-bottom: 40px;
+}
+
+.contact .map iframe {
+    border: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.contact .info {
+    padding: 40px;
+    box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
+    overflow: hidden;
+}
+
+.contact .info h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.contact .info p {
+    color: var(--color-secondary-light);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.contact .info-item + .info-item {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
+}
+
+.contact .info-item i {
+    font-size: 24px;
+    color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.contact .info-item h4 {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--color-secondary);
+}
+
+.contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--color-secondary-light);
+}
+
+.contact .php-email-form {
+    width: 100%;
+    background: var(--color-white);
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: var(--color-white);
+    background: var(--color-red);
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: var(--color-white);
+    background: var(--color-green);
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: var(--color-white);
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--color-green);
+    border-top-color: var(--color-white);
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
+.contact .php-email-form textarea:focus {
+    border-color: var(--color-secondary-light);
+}
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"] {
+    height: 48px;
+    padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px;
+    height: 290px;
+}
+
+.contact .php-email-form button[type="submit"] {
+    background: var(--color-primary);
+    border: 0;
+    padding: 13px 50px;
+    color: var(--color-white);
+    transition: 0.4s;
+    border-radius: 0;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: rgba(var(--color-primary-rgb), 0.85);
+}
