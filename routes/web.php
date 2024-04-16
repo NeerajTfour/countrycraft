@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BarController;
+use App\Http\Controllers\ShippingController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -21,4 +22,7 @@ Route::controller(AboutController::class)->group(function () {
 });
 Route::controller(BarController::class)->group(function () {
     Route::get('/bar', 'index');
+});
+Route::controller(ShippingController::class)->group(function () {
+    Route::get('/shipping', 'index');
 });

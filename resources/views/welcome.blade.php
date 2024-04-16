@@ -44,7 +44,7 @@
                                     Products
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/product">Bar Chair</a></li>
+                                    <li><a class="dropdown-item" href="/bar">Bar Cabinet</a></li>
                                     <li><a class="dropdown-item" href="#">Bed</a></li>
                                     <li><a class="dropdown-item" href="#">Chair</a></li>
                                 </ul>
@@ -75,11 +75,9 @@
         </div> --}}
     </section>
 
-    <section>
-        <div class="container-fluid">
-
+    <section class="container-fluid">
+        <div class="row">
             @yield('master')
-
         </div>
     </section>
     <section>
@@ -134,11 +132,11 @@
                             <h4>Help</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/contact">Contact Us</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="shipping">Shipping &amp;
+                                <li><i class="fa fa-chevron-right"></i> <a href="/shipping">Shipping &amp;
                                         Returns</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="terms">Terms &amp;
+                                <li><i class="fa fa-chevron-right"></i> <a href="/terms">Terms &amp;
                                         Conditions</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="privacy">Privacy Policy</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/privacy">Privacy Policy</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-newsletter">

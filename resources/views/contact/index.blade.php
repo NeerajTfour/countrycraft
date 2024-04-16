@@ -3,11 +3,11 @@
 @section('master')
     <main id="main">
 
-        <section class="container-fluid">
+        <section>
             <div class="">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="/assets/images/1660920837778.jpg" alt="" width="100%" height="290px">
+                        <img src="/assets/images/1660920837778.jpg" alt="" width="100%" height="220px">
                     </div>
                 </div>
                 <div class="row ">
@@ -112,13 +112,13 @@
                     </div>
 
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5 mb-0">
                     <div class="col-md-12 col-lg-12 col-sm-12 smt-30 xmt-30">
                         <div class="map-contacts">
                             <div id="googleMap">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14323.330076149523!2d72.9370856!3d26.1695834!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5a559669c9b5c23!2sCountry%20Craft%20Exports%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1669878570810!5m2!1sen!2sin"
-                                    width="100%" height="350px"></iframe>
+                                    width="100%" height="470px"></iframe>
                             </div>
                         </div>
                     </div>

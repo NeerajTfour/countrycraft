@@ -2,10 +2,10 @@
 
 @section('master')
     <section>
-        <div class="container-fluid">
+        <div class="">
             <div class="row">
-                <div class="col-md-12">
-                    <img src="/assets/images/H&H1.jpg" alt="" width="1310px" height="430px">
+                <div class="col-md-12 col-sm-12 col-lg-12 about-banner">
+                    <img src="/assets/images/H&H1.jpg" alt="" class="" width="1310px" height="430px">
                 </div>
             </div>
             <div class="row text-center mt-3 pt-3">

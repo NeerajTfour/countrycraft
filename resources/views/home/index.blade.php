@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('master')
-    <section class="container-fluid bg-light">
+    <section class="container">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
@@ -24,7 +24,7 @@
                         <div class="carousel-caption text-start">
                             <h1>Example headline.</h1>
                             <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="/contact">Sign up today</a></p>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
             </button>
         </div>
     </section>
-    <section class="bg-light">
+    <section class="" style="background-color: #fcfafa">
         <div class="c-section container-fluid">
             <div class="row heading">
                 <h1>Trending Style</h1>
@@ -96,13 +96,13 @@
             </div>
         </div>
     </section>
-    <section class="bg-light">
+    <section class="" style="background-color: #fcfafa">
         <div class="container-fluid">
             <div class="row heading">
                 <h1>About Furniture</h1>
             </div>
-            <div class="row overlay mb-3">
-                <div class="col-md-6 col-lg-6 p-3">
+            <div class="row mb-3">
+                <div class="col-md-6 col-lg-6 p-3 about-img">
                     <img src="/assets/images/H&H1.jpg" alt="" width="100%" height="500">
                 </div>
                 <div class="col-md-6 col-lg-6 pt-3">
@@ -134,11 +134,42 @@
         </div>
     </section>
     <section>
-        <div class="container-fluid cont">
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-3">
+                <p class="text-center fs-4">The most wanted products in furniture and decoration</p>
+                <div class="col-md-2">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Bookshelf</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Bar Cabinet</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Chair</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Coffee Table</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Console Table</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Shelving</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Dining Table</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" class="o-btn o-btn--secondary u-spacing">TV Cabinet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class=" cont">
             <div class="row  heading">
                 <h1>Furniture At Home</h1>
             </div>
-            <div class="row overlay">
+            <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <img class="c-cardegory__img blur-up lazyloaded" alt="Ratan" width="100%" height="450"
                         data-src="https://cdn.sklum.com/wk/img/core/skl/promos/home/240402-SK-BANNER-special-price-rattan-Desktop.jpg?v=1711523777"
@@ -151,8 +182,31 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid">
-        <div class="container-fluid">
+    <section>
+        <div class="">
+            <div class="row  about-img" style="background-color: #fcfafa">
+                <div class="col-md-4">
+                    <img src="/assets/images/download (5).jpg" alt="" width="100%" height="280px">
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-center mt-3">Why Choose Us?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe repellat optio maxime, nisi minus
+                        dicta asperiores sapiente harum eaque illo dignissimos molestiae! Nobis, praesentium quis tenetur
+                        iure eaque ullam omnis.
+                    </p>
+                    <div class="justify-content-center float-right">
+                        <a href="/contact" class="btn btn-md btn-dark">More Details</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/images/download (3).jpg" alt="" width="100%" height="280px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row heading">
+            <h1>Our Category</h1>
             <div class="product-slider">
                 {{-- <div class="product-slider__category">
                     <h1>Product Category</h1>
@@ -164,31 +218,31 @@
                 </div> --}}
                 <div class="product-slider__slider container-fluid">
                     <div class="product-slider__item">
-                        <img src="/assets/images/download (1).jpg">
+                        <img src="/assets/images/download (1).jpg" class="rounded-circle" width="100%">
                         <h3>CountryCraft </h3>
                         <small>small table</small>
                     </div>
 
                     <div class="product-slider__item">
-                        <img src="/assets/images/download (3).jpg">
+                        <img src="/assets/images/download (3).jpg" class="rounded-circle" width="100%">
                         <h3>CountryCraft </h3>
                         <small>Table</small>
                     </div>
 
                     <div class="product-slider__item">
-                        <img src="/assets/images/download (2).jpg">
+                        <img src="/assets/images/download (2).jpg" class="rounded-circle" width="100%">
                         <h3>CountryCraft </h3>
                         <small>Tea Table</small>
                     </div>
 
                     <div class="product-slider__item">
-                        <img src="/assets/images/download (4).jpg">
+                        <img src="/assets/images/download (4).jpg" class="rounded-circle" width="100%">
                         <h3>CountryCraft</h3>
                         <small>Coffee Table</small>
                     </div>
 
                     <div class="product-slider__item">
-                        <img src="/assets/images/download (5).jpg">
+                        <img src="/assets/images/download (5).jpg" class="rounded-circle" width="100%">
                         <h3>CountryCraft</h3>
                         <small>Dining Table</small>
                     </div>
