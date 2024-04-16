@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BarController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,4 +15,10 @@ Route::get('/contact', function () {
 });
 Route::get('/product', function () {
     return view('product.index');
+});
+Route::controller(AboutController::class)->group(function () {
+    Route::get('/about', 'index');
+});
+Route::controller(BarController::class)->group(function () {
+    Route::get('/bar', 'index');
 });

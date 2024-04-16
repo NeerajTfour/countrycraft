@@ -44,9 +44,9 @@
                                     Products
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/product">Bed</a></li>
+                                    <li><a class="dropdown-item" href="/product">Bar Chair</a></li>
+                                    <li><a class="dropdown-item" href="#">Bed</a></li>
                                     <li><a class="dropdown-item" href="#">Chair</a></li>
-                                    <li><a class="dropdown-item" href="#">Table</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -77,9 +77,9 @@
 
     <section>
         <div class="container-fluid">
-            <div class="row">
-                @yield('master')
-            </div>
+
+            @yield('master')
+
         </div>
     </section>
     <section>
@@ -90,8 +90,8 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-info">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-info ms-3 ps-2">
                                 <img src="/assets/images/logo-white.png" width="150px" class=""
                                     style="margin-top: -25px; margin-left:-34px;" alt="company logo">
                                 <p class="mx-auto mt-2">
@@ -105,7 +105,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 footer-links">
+                        <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                             <h4>Shop</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/">Furniture</a></li>
@@ -118,7 +118,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 footer-links">
+                        <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                             <h4>Service</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/about">About Us</a></li>
@@ -130,7 +130,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 footer-links">
+                        <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                             <h4>Help</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/contact">Contact Us</a></li>
@@ -141,7 +141,7 @@
                                 <li><i class="fa fa-chevron-right"></i> <a href="privacy">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <div class="col-lg-3 col-md-6 col-sm-6 footer-newsletter">
                             {{-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
                             <h4 class="footer-newsletter">Our Newsletter</h4>
                             <form action="" method="post">

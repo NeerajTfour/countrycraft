@@ -3,11 +3,11 @@
 @section('master')
     <main id="main">
 
-        <section id="" class="">
-            <div class="container-fluid">
+        <section class="container-fluid">
+            <div class="">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="/assets/images/" alt="" width="100%" height="250px">
+                        <img src="/assets/images/1660920837778.jpg" alt="" width="100%" height="290px">
                     </div>
                 </div>
                 <div class="row ">

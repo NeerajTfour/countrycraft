@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="/assets/images/images.jpg" alt="" width="1310px" height="450px">
+                    <img src="/assets/images/H&H1.jpg" alt="" width="1310px" height="430px">
                 </div>
             </div>
             <div class="row text-center mt-3 pt-3">
@@ -29,7 +29,7 @@
                     <h1>Why Choose Us?</h1>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <div class="card">
+                    <div class="card1">
                         <i class="fa-thin fa-star-sharp"></i>
                         <h2>Quality Furniture</h2>
                         <p>We strive diligently select furniture that will last a long period of time in your space and
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <div class="card">
+                    <div class="card1">
                         <i class="fa-grid-2"></i>
                         <h2>Extensive Collection</h2>
                         <p>We as the leading furniture manufacturer, offers the most diverse collection of furniture. There
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <div class="card">
+                    <div class="card1">
                         <h2>An Experience</h2>
                         <p>For us, success means that the process supports your enthusiasm rather than your dissatisfaction
                             and

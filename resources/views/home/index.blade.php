@@ -29,8 +29,8 @@
                     </div>
                 </div>
                 <div class="carousel-item active carousel-item-start">
-                    <img src="/assets/images/images.jpg" alt="" width="100%" height="480px" aria-hidden="true"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" />
+                    <img src="/assets/images/milwaukee-road-seating.jpg" alt="" width="100%" height="480px"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                     {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> --}}
                     <rect width="100%" height="100%" fill="#777"></rect>
@@ -45,8 +45,8 @@
                     </div>
                 </div>
                 <div class="carousel-item carousel-item-next carousel-item-start">
-                    <img src="/assets/images/images (1).jpg" alt="" width="100%" height="480px" aria-hidden="true"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" />
+                    <img src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp" alt="" width="100%"
+                        height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                     {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> --}}
                     <rect width="100%" height="100%" fill="#777"></rect>
@@ -82,8 +82,8 @@
                     <h3 class="c-section__title">Trending now</h3>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6 ">
-                    <img src="/assets/images/images (2).jpg" class="" alt="" width="100%" height="300px">
-                    <h6 class="pt-3 mb-2">Table</h6>
+                    <img src="/assets/images/477761277.jpg" class="" alt="" width="100%" height="300px">
+                    <h6 class="pt-3 mb-2">Sofa</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
                     <img src="/assets/images/download (3).jpg" alt="" width="100%" height="300px">
@@ -103,7 +103,7 @@
             </div>
             <div class="row overlay mb-3">
                 <div class="col-md-6 col-lg-6 p-3">
-                    <img src="/assets/images/images (1).jpg" alt="" width="100%" height="500">
+                    <img src="/assets/images/H&H1.jpg" alt="" width="100%" height="500">
                 </div>
                 <div class="col-md-6 col-lg-6 pt-3">
                     <h4>Online furniture: where each piece tells its story </h4>
@@ -142,7 +142,7 @@
                 <div class="col-md-12 col-lg-12">
                     <img class="c-cardegory__img blur-up lazyloaded" alt="Ratan" width="100%" height="450"
                         data-src="https://cdn.sklum.com/wk/img/core/skl/promos/home/240402-SK-BANNER-special-price-rattan-Desktop.jpg?v=1711523777"
-                        src="/assets/images/istockphoto-1419085349-612x612.jpg">
+                        src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp">
                     <div class="text-block">
                         <h4>Nature</h4>
                         <p>What a beautiful sunrise</p>
@@ -162,36 +162,34 @@
                         sed. Maecenas eget molestie tellus.</p>
                     <a href="/">See all products</a>
                 </div> --}}
-                <div class="product-slider__slider">
+                <div class="product-slider__slider container-fluid">
                     <div class="product-slider__item">
                         <img src="/assets/images/download (1).jpg">
-                        <h3>greens+ </h3>
+                        <h3>CountryCraft </h3>
                         <small>small table</small>
                     </div>
 
                     <div class="product-slider__item">
-                        <a href="">
-                            <img src="/assets/images/download (3).jpg">
-                            <h3>greens+ </h3>
-                            <small>Table</small>
-                        </a>
+                        <img src="/assets/images/download (3).jpg">
+                        <h3>CountryCraft </h3>
+                        <small>Table</small>
                     </div>
 
                     <div class="product-slider__item">
                         <img src="/assets/images/download (2).jpg">
-                        <h3>greens+ </h3>
+                        <h3>CountryCraft </h3>
                         <small>Tea Table</small>
                     </div>
 
                     <div class="product-slider__item">
                         <img src="/assets/images/download (4).jpg">
-                        <h3>greens+ </h3>
+                        <h3>CountryCraft</h3>
                         <small>Coffee Table</small>
                     </div>
 
                     <div class="product-slider__item">
                         <img src="/assets/images/download (5).jpg">
-                        <h3>greens+ </h3>
+                        <h3>CountryCraft</h3>
                         <small>Dining Table</small>
                     </div>
                 </div>
