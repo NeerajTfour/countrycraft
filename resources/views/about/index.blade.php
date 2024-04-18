@@ -5,7 +5,7 @@
         <div class="">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-12 about-banner">
-                    <img src="/assets/images/H&H1.jpg" alt="" class="" width="1310px" height="430px">
+                    <img src="/assets/images/H&H1.jpg" alt="" class="" width="100%" height="430px">
                 </div>
             </div>
             <div class="row text-center mt-3 pt-3">
@@ -52,6 +52,56 @@
                         <p>For us, success means that the process supports your enthusiasm rather than your dissatisfaction
                             and
                             that it ends with you being completely satisfied with your piece.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ms-2 mb-3 text-center">
+                <div class="col-lg-9 col-md-12 col-sm-12 div-order">
+                    <div class="team-detail">
+                        <div class="team-text factory-text">
+                            <h4 class="sub-title mb-20 "> <a href="" target="_blank" style="text-decoration: none">
+                                    Our Factory @ Boranada </a></h4>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quasi, vero ipsa fuga,
+                                obcaecati dolorum aliquam dolor soluta necessitatibus adipisci, voluptates praesentium
+                                maiores mollitia nulla. Facilis recusandae obcaecati totam a. Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Tempore dolorem, expedita minus, dicta laudantium beatae
+                                ducimus laboriosam dolore id enim odio! Minima ullam aspernatur quidem, molestiae
+                                reprehenderit numquam fugit unde! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Cum esse tempore eveniet, doloribus fugiat tenetur magni neque magnam architecto, rem
+                                incidunt in aliquid deserunt distinctio alias inventore eaque. Quae, cupiditate. Lorem ipsum
+                                dolor sit amet consectetur, adipisicing elit. Quasi asperiores quae repellat numquam maiores
+                                debitis beatae recusandae ea! Impedit quas aliquam iste officia et deserunt dolor eaque.
+                                Rerum, similique at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                                natus error labore molestias accusamus voluptatem ex consectetur. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-5 pt-3 overlay">
+                    <img src="assets/images/download.jpg" width="" alt="">
+                </div>
+            </div>
+            <div class="row ms-2 mb-3 text-center">
+                <div class="col-lg-3 mt-4 pt-3 overlay">
+                    <img src="assets/images/images (2).jpg" width="" alt="">
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 div-order">
+                    <div class="team-detail">
+                        <div class="team-text factory-text">
+                            <h4 class="sub-title mb-20 "> <a href="" target="_blank" style="text-decoration: none">
+                                    Our Factory @ Boranada </a></h4>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quasi, vero ipsa fuga,
+                                obcaecati dolorum aliquam dolor soluta necessitatibus adipisci, voluptates praesentium
+                                maiores mollitia nulla. Facilis recusandae obcaecati totam a. Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Quidem atque modi, voluptas, nam repellendus quod ea nulla
+                                suscipit dolore iusto eaque rem dicta ex natus expedita eum reiciendis quas. Excepturi?
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, libero cumque. Mollitia
+                                beatae, harum provident architecto accusantium qui omnis voluptate nesciunt sit minima
+                                libero illo. Corrupti quidem nobis molestias reprehenderit. Lorem ipsum dolor sit, amet
+                                consectetur adipisicing elit. Ea, quas libero cumque optio cupiditate deserunt facere
+                                impedit repellendus quisquam cum, explicabo voluptas in architecto aliquid! At natus optio
+                                nesciunt voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo
+                                mollitia vero repudiandae, odio consectetur commodi ipsa voluptates. </p>
+                        </div>
                     </div>
                 </div>
             </div>

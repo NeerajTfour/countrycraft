@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --color__newsletter-bg: #ddd3cc;
     --color__footer-bg: #ede7e2;
@@ -251,6 +255,9 @@ ol {
     padding-inline-start: 40px;
     unicode-bidi: isolate;
 }
+.info-item a {
+    color: gray;
+}
 /* heading style */
 .heading h1 {
     /* color: red; */
@@ -275,6 +282,38 @@ header {
     width: 100%;
     height: 90px;
 }
+/* header dropdown */
+/* .dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    float: none;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+} */
 /* Home page about section img rounded */
 .about-img img {
     border-radius: 0 150px 0 150px;
@@ -369,7 +408,12 @@ header {
 .pro ul li a {
     text-decoration: none;
     line-height: 40px;
-    color: rgb(250, 184, 4);
+    color: rgb(32, 24, 2);
+}
+/* home page table button */
+.tab a:hover {
+    background: #000;
+    color: #fff;
 }
 /* Home page image card */
 .card1 {
@@ -388,6 +432,17 @@ header {
     font-weight: 500;
     text-align: justify;
     word-spacing: 6px;
+}
+/* Card-2 */
+.card-2 {
+    text-align: center;
+}
+.card-2 img {
+    height: 23rem;
+}
+.card-2 .card-title {
+    color: var(--color-red);
+    text-transform: uppercase;
 }
 .c-banner-features {
     flex-direction: row;
@@ -847,4 +902,36 @@ header {
 
 .contact .php-email-form button[type="submit"]:hover {
     background: rgba(var(--color-primary-rgb), 0.85);
+}
+/* about */
+.team-detail {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 5px 8px 15px -1px #d6d2d2;
+    padding: 20px 20px;
+    padding-right: 100px;
+}
+.sub-title {
+    font-size: 32px;
+    color: #d3a272;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+.sub-title p {
+    font-size: 23px;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }

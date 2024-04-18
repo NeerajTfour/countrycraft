@@ -46,9 +46,17 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="/bar">Bar Cabinet</a></li>
                                     <li><a class="dropdown-item" href="#">Bed</a></li>
-                                    <li><a class="dropdown-item" href="#">Chair</a></li>
+                                    <li><a class="dropdown-item" href="/chair">Chair</a></li>
                                 </ul>
                             </li>
+                            {{-- <li class="dropdown">
+                                <a href="#">Dropdown</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact">Contact Us</a>
                             </li>
@@ -90,15 +98,17 @@
 
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="footer-info ms-3 ps-2">
-                                <img src="/assets/images/logo-white.png" width="150px" class=""
+                                <img src="/assets/images/logo-white.png" width="130px" class="ps-3 pt-3"
                                     style="margin-top: -25px; margin-left:-34px;" alt="company logo">
-                                <p class="mx-auto mt-2">
+                                <p class="mx-auto mt-3">
                                     India Office : <br>
-                                    G 927- 928 Phase 4 Boranada, <br> Jodhpur, Rajasthan 342012 <br><br>
+                                    G 927- 928 Phase 4 Boranada, <br> Jodhpur, Rajasthan 342012 <br>
                                     <i class="fa fa-phone "> </i> +91 291 2951217<br>
                                     <i class="fa fa-phone "> </i> +91 9829027518<br>
                                     <i class="fa fa-envelope"> </i>
-                                    admin@countrycraftexports.com<br>
+                                    <a href="mailto:admin@countrycraftexports.com" class="text-white" target="blank"
+                                        style="text-decoration: none">
+                                        admin@countrycraftexports.com</a><br>
                                 </p>
                             </div>
                         </div>
@@ -120,7 +130,7 @@
                             <h4>Service</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/about">About Us</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/team">Meet the Team</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/contact">Meet the Team</a></li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="contact">Showroom
                                         Locator</a></li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/fairs">Fairs &amp; Events</a></li>
@@ -156,7 +166,11 @@
 
                     <div class="d-flex flex-column align-items-center align-items-lg-start">
                         <div class="copyright">
-                            &copy; <strong><span>CountryCraft Exp</span></strong>. All Rights Reserved 2024
+                            Manage by TFour Tech Pvt. Ltd | All Rights Reserved by CountryCraftExports ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            {{-- &copy; <strong><span>CountryCraft Exp</span></strong>. All Rights Reserved 2024 --}}
                         </div>
                     </div>
 

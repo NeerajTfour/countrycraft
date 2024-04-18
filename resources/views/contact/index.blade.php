@@ -25,7 +25,7 @@
                                             <p></p>
 
                                             <div class="info-item d-flex">
-                                                <i class="fa fa-geo-alt flex-shrink-0"></i>
+                                                <i class="fa fa-location-dot"></i>
                                                 <div>
                                                     <h4>Location:</h4>
                                                     <p> India Office : <br>
@@ -38,7 +38,9 @@
                                                 <i class="fa fa-envelope flex-shrink-0"></i>
                                                 <div>
                                                     <h4>Email:</h4>
-                                                    <p>admin@countrycraftexports.com</p>
+                                                    <p> <a href="mailto:admin@countrycraftexports.com" target="blank"
+                                                            style="text-decoration: none">admin@countrycraftexports.com</a>
+                                                    </p>
                                                 </div>
                                             </div><!-- End Info Item -->
 

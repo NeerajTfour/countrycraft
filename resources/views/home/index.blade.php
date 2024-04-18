@@ -82,15 +82,18 @@
                     <h3 class="c-section__title">Trending now</h3>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6 ">
-                    <img src="/assets/images/477761277.jpg" class="" alt="" width="100%" height="300px">
+                    <img id="image" src="/assets/images/download (7).jpg" class="" alt="" width="100%"
+                        height="300px">
                     <h6 class="pt-3 mb-2">Sofa</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img src="/assets/images/download (3).jpg" alt="" width="100%" height="300px">
+                    <img id="image" src="/assets/images/download (3).jpg" alt="" width="100%"
+                        height="300px">
                     <h6 class="pt-3 mb-2">Tea Table</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img src="/assets/images/download (2).jpg" alt="" width="100%" height="300px">
+                    <img id="image" src="/assets/images/download (2).jpg" alt="" width="100%"
+                        height="300px">
                     <h6 class="pt-3 mb-2">Coffee Table</h6>
                 </div>
             </div>
@@ -108,13 +111,13 @@
                 <div class="col-md-6 col-lg-6 pt-3">
                     <h4>Online furniture: where each piece tells its story </h4>
                     <p class="">
-                        At Sklum, we believe that your home is the canvas of your own story. All of our online furniture
+                        At CCE, we believe that your home is the canvas of your own story. All of our online furniture
                         and decor accessories are meticulously selected to inspire, excite and transform your space into
                         a reflection of your identity. Our philosophy focuses on offering practical and aesthetic
                         solutions, accessible to everyone, transforming each home into a haven of beauty and
                         comfort.<br>
 
-                        Always keeping an eye on the latest trends, Sklum is your trusted online furniture store to find
+                        Always keeping an eye on the latest trends, CCE is your trusted online furniture store to find
                         that special detail that will transform your home into a place with its own character and
                         personality. We are the meeting point between the simplicity of minimalism and the
                         expressiveness of contemporary style, offering you infinite possibilities to update your home.
@@ -122,11 +125,11 @@
 
                     <h4> Live every moment with style and authenticity </h4>
 
-                    <p>Sklum, your online furniture shop
+                    <p>CCE, your online furniture shop
                         Our spanish furniture is more than objects; they become part of your story, evolving with you in
                         each new chapter. Allow us to accompany you on this journey towards renewal and personal
                         expression, where each piece is a step towards a space that speaks of you and your passions.
-                        With Sklum, discover the power of transforming your home into a vibrant setting, where every day
+                        With CCE, discover the power of transforming your home into a vibrant setting, where every day
                         is an opportunity to live your story with style and authenticity
                     </p>
                 </div>
@@ -135,30 +138,30 @@
     </section>
     <section>
         <div class="container">
-            <div class="row justify-content-center mt-5 mb-3">
+            <div class="row justify-content-center mt-5 mb-3 tab">
                 <p class="text-center fs-4">The most wanted products in furniture and decoration</p>
-                <div class="col-md-2">
+                <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Bookshelf</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Bar Cabinet</a>
                 </div>
-                <div class="col-md-2">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Chair</a>
+                <div class="col-md-2 col-lg-2 col-sm-6">
+                    <a href="/chair" class="o-btn o-btn--secondary u-spacing">Chair</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Coffee Table</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Console Table</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Shelving</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-lg-6 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Dining Table</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-lg-6 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">TV Cabinet</a>
                 </div>
             </div>
@@ -189,13 +192,13 @@
                     <img src="/assets/images/download (5).jpg" alt="" width="100%" height="280px">
                 </div>
                 <div class="col-md-4">
-                    <h3 class="text-center mt-3">Why Choose Us?</h3>
+                    <h3 class="text-center mt-3 text-info">Why Choose Us?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe repellat optio maxime, nisi minus
                         dicta asperiores sapiente harum eaque illo dignissimos molestiae! Nobis, praesentium quis tenetur
                         iure eaque ullam omnis.
                     </p>
-                    <div class="justify-content-center float-right">
-                        <a href="/contact" class="btn btn-md btn-dark">More Details</a>
+                    <div class="text-center">
+                        <a href="/contact" class="btn btn-md btn-dark mb-3 rounded-pill">More Details</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -217,7 +220,7 @@
                     <a href="/">See all products</a>
                 </div> --}}
                 <div class="product-slider__slider container-fluid">
-                    <div class="product-slider__item">
+                    <div class="product-slider__item ">
                         <img src="/assets/images/download (1).jpg" class="rounded-circle" width="100%">
                         <h3>CountryCraft </h3>
                         <small>small table</small>
@@ -258,3 +261,21 @@
         </div>
     </section> --}}
 @endsection
+<script>
+    window.onload = function() {
+        var images = ['/assets/images/download (7).jpg', '/assets/images/download (8).jpg',
+            '/assets/images/download (9).jpg', '/assets/images/download (10).jpg',
+            '/assets/images/download (11).jpg',
+            '/assets/images/download (6).jpg', '/assets/images/download (5).jpg'
+        ]; // List of image URLs
+        var currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length; // Increment index, loop back to 0 if end is reached
+            document.getElementById('image').src = images[currentIndex]; // Change image source
+        }
+
+        setInterval(changeImage, 24 * 60 * 60 *
+            1000); // Change image every 24 hours (24 * 60 * 60 * 1000 milliseconds)
+    };
+</script>
