@@ -36,17 +36,17 @@
                                 <a class="nav-link" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/about">About Us</a>
+                                <a class="nav-link" href="/layouts/about">About Us</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/product" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="/layouts/product" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Products
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/bar">Bar Cabinet</a></li>
+                                    <li><a class="dropdown-item" href="/layouts/bar">Bar Cabinet</a></li>
                                     <li><a class="dropdown-item" href="#">Bed</a></li>
-                                    <li><a class="dropdown-item" href="/chair">Chair</a></li>
+                                    <li><a class="dropdown-item" href="/layouts/chair">Chair</a></li>
                                 </ul>
                             </li>
                             {{-- <li class="dropdown">
@@ -58,7 +58,7 @@
                                 </ul>
                             </li> --}}
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact Us</a>
+                                <a class="nav-link" href="/layouts/contact">Contact Us</a>
                             </li>
                         </ul>
                         {{-- <form class="d-flex">
@@ -117,7 +117,7 @@
                             <h4>Shop</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/">Furniture</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/about">Plants</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/about">Plants</a></li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="">Homewares</a>
                                 </li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="">Shop the Looks</a></li>
@@ -129,9 +129,10 @@
                         <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                             <h4>Service</h4>
                             <ul>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/about">About Us</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/contact">Meet the Team</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="contact">Showroom
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/about">About Us</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/contact">Meet the Team</a>
+                                </li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/contact">Showroom
                                         Locator</a></li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/fairs">Fairs &amp; Events</a></li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/career">Careers</a></li>
@@ -141,18 +142,21 @@
                         <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                             <h4>Help</h4>
                             <ul>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/contact">Contact Us</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/shipping">Shipping &amp;
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/contact">Contact Us</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/shipping">Shipping &amp;
                                         Returns</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/terms">Terms &amp;
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/terms">Terms &amp;
                                         Conditions</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/privacy">Privacy Policy</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/privacy">Privacy Policy</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-newsletter">
                             {{-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
                             <h4 class="footer-newsletter">Our Newsletter</h4>
-                            <form action="" method="post">
+                            <form action="{{ route('newsletter.store') }}" method="POST">
+                                @csrf
+                                @method('POST')
                                 <input type="email" name="email"><input type="submit" value="Subscribe">
                             </form>
                         </div>

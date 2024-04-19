@@ -67,8 +67,10 @@
                                     </div>
 
                                     <div class="col-lg-8">
-                                        <form action="" method="POST" role="form" class="php-email-form">
+                                        <form action="{{ route('contact.store') }}" method="POST" role="form"
+                                            enctype="multipart/form-data" class="php-email-form">
                                             @csrf
+                                            @method('POST')
                                             <div class="row">
                                                 <div class="col-md-6 form-group">
                                                     <input type="text" name="name" class="form-control" id="name"
@@ -80,11 +82,11 @@
                                                 </div>
                                             </div>
                                             <div class="form-group mt-3">
-                                                <input type="text" class="form-control" name="subject" id="subject"
-                                                    placeholder="Subject" required>
+                                                <input type="text" class="form-control" name="contact" id="subject"
+                                                    placeholder="Contact No." required>
                                             </div>
                                             <div class="form-group mt-3">
-                                                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                                                <textarea class="form-control" name="msg" placeholder="Message" required></textarea>
                                             </div>
                                             <div class="my-3">
                                                 <div class="loading">Loading</div>
@@ -94,8 +96,8 @@
                                             <div class="text-center">
                                                 <button class="p-2 mt-3"
                                                     style="
-                              background-color: #d35400;
-                              border: 1px solid #d35400;
+                              background-color: #1b0c02;
+                              border: 1px solid #1a0b02;
                               border-radius: 50px;
                               color: white;
                               width: 170px;

@@ -13,7 +13,7 @@ class TermsController extends Controller
     public function index()
     {
         $term = terms::get();
-        return view('terms.terms', compact('term'));
+        return view('layouts.terms.terms', compact('term'));
     }
 
     /**

@@ -13,7 +13,7 @@ class PrivacyController extends Controller
     public function index()
     {
         $privacy = privacy::get();
-        return view('privacy.index', compact('privacy'));
+        return view('layouts.privacy.index', compact('privacy'));
     }
 
     /**

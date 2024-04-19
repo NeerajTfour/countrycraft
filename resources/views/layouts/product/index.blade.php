@@ -7,7 +7,7 @@
                 <div class="col-md-2 pt-3 pro ">
                     <h6>PRODUCT CATEGORIES</h6>
                     <ul class="">
-                        <li><a href="/bar">Bar Cabinet</a></li>
+                        <li><a href="/layouts/bar">Bar Cabinet</a></li>
                         <li> <a href="">Bed Side</a></li>
                         <li> <a href="">Bookshelf</a></li>
                         <li> <a href="">chair</a></li>

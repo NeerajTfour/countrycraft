@@ -31,8 +31,6 @@
                 <div class="carousel-item active carousel-item-start">
                     <img src="/assets/images/milwaukee-road-seating.jpg" alt="" width="100%" height="480px"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                    {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> --}}
                     <rect width="100%" height="100%" fill="#777"></rect>
                     </svg>
 
@@ -47,8 +45,6 @@
                 <div class="carousel-item carousel-item-next carousel-item-start">
                     <img src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp" alt="" width="100%"
                         height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                    {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> --}}
                     <rect width="100%" height="100%" fill="#777"></rect>
                     </svg>
 
@@ -75,7 +71,6 @@
         <div class="c-section container-fluid">
             <div class="row heading">
                 <h1>Trending Style</h1>
-                {{-- <img src="/assets/images/download.png" alt="" class="m-0" height="100" width="50%"> --}}
             </div>
             <div class="row overlay p-3">
                 <div class="c-section__hgroup">
@@ -87,13 +82,11 @@
                     <h6 class="pt-3 mb-2">Sofa</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img id="image" src="/assets/images/download (3).jpg" alt="" width="100%"
-                        height="300px">
+                    <img src="/assets/images/download (3).jpg" alt="" width="100%" height="300px">
                     <h6 class="pt-3 mb-2">Tea Table</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img id="image" src="/assets/images/download (2).jpg" alt="" width="100%"
-                        height="300px">
+                    <img src="/assets/images/download (2).jpg" alt="" width="100%" height="300px">
                     <h6 class="pt-3 mb-2">Coffee Table</h6>
                 </div>
             </div>
@@ -147,7 +140,7 @@
                     <a href="" class="o-btn o-btn--secondary u-spacing">Bar Cabinet</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="/chair" class="o-btn o-btn--secondary u-spacing">Chair</a>
+                    <a href="/layouts/chair" class="o-btn o-btn--secondary u-spacing">Chair</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Coffee Table</a>
@@ -197,8 +190,8 @@
                         dicta asperiores sapiente harum eaque illo dignissimos molestiae! Nobis, praesentium quis tenetur
                         iure eaque ullam omnis.
                     </p>
-                    <div class="text-center">
-                        <a href="/contact" class="btn btn-md btn-dark mb-3 rounded-pill">More Details</a>
+                    <div class="text-center more">
+                        <a href="/layouts/contact" class="btn btn-md btn-dark mb-3 rounded-pill">More Details</a>
                     </div>
                 </div>
                 <div class="col-md-4">

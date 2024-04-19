@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="row text-center mt-3 pt-3">
-                <div class="col-md-12 heading">
+                <div class="col-md-12 heading more">
                     <h1>Welcome to Country Crafts</h1>
                     <p class="ms-5 me-auto p-5 ">Country Craft seeks to offer bespoke furniture through a unique and
                         advanced
@@ -21,7 +21,7 @@
                         designs should be exclusive, ergonomic, and user-friendly while also having a sophisticated
                         appearance.
                     </p>
-                    <a href="/contact" type="submit" class="btn btn-md btn-dark mb-3">Contact Us</a>
+                    <a href="/contact" type="submit" class="btn btn-md btn-dark mb-3 rounded-pill">Contact Us</a>
                 </div>
             </div>
             <div class="row mb-3">
@@ -77,12 +77,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mt-5 pt-3 overlay">
-                    <img src="assets/images/download.jpg" width="" alt="">
+                    <img src="/assets/images/download.jpg" width="" alt="">
                 </div>
             </div>
             <div class="row ms-2 mb-3 text-center">
                 <div class="col-lg-3 mt-4 pt-3 overlay">
-                    <img src="assets/images/images (2).jpg" width="" alt="">
+                    <img src="/assets/images/images (2).jpg" width="" alt="">
                 </div>
                 <div class="col-lg-9 col-md-12 col-sm-12 div-order">
                     <div class="team-detail">

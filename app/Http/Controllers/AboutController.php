@@ -13,7 +13,7 @@ class AboutController extends Controller
     public function index()
     {
         $about = about::get();
-        return view('about.index');
+        return view('layouts.about.index');
     }
 
     /**

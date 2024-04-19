@@ -13,7 +13,7 @@ class BarController extends Controller
     public function index()
     {
         $bar = bar::get();
-        return view('bar.index', compact('bar'));
+        return view('layouts.bar.index', compact('bar'));
     }
 
     /**

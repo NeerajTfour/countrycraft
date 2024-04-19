@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\shipping;
+use App\Models\newsletter;
 use Illuminate\Http\Request;
 
-class ShippingController extends Controller
+class NewsletterController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $ship = shipping::get();
-        return view('layouts.shipping.index', compact('ship'));
+        //
     }
 
     /**
@@ -29,13 +28,17 @@ class ShippingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $news = new newsletter;
+        $news->email = $request->email;
+
+        $news->save();
+        return back();
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(shipping $shipping)
+    public function show(newsletter $newsletter)
     {
         //
     }
@@ -43,7 +46,7 @@ class ShippingController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(shipping $shipping)
+    public function edit(newsletter $newsletter)
     {
         //
     }
@@ -51,7 +54,7 @@ class ShippingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, shipping $shipping)
+    public function update(Request $request, newsletter $newsletter)
     {
         //
     }
@@ -59,7 +62,7 @@ class ShippingController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(shipping $shipping)
+    public function destroy(newsletter $newsletter)
     {
         //
     }

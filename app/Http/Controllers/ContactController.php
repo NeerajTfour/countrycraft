@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\shipping;
+use App\Models\contact;
 use Illuminate\Http\Request;
 
-class ShippingController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $ship = shipping::get();
-        return view('layouts.shipping.index', compact('ship'));
+        return view('layouts.contact.index');
     }
 
     /**
@@ -29,13 +28,20 @@ class ShippingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contact = new contact;
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->contact = $request->contact;
+        $contact->msg = $request->msg;
+        $contact->save();
+        return back();
+
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(shipping $shipping)
+    public function show(contact $contact)
     {
         //
     }
@@ -43,7 +49,7 @@ class ShippingController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(shipping $shipping)
+    public function edit(contact $contact)
     {
         //
     }
@@ -51,7 +57,7 @@ class ShippingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, shipping $shipping)
+    public function update(Request $request, contact $contact)
     {
         //
     }
@@ -59,7 +65,7 @@ class ShippingController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(shipping $shipping)
+    public function destroy(contact $contact)
     {
         //
     }

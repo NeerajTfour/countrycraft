@@ -3,41 +3,56 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BarController;
 use App\Http\Controllers\ChairController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ShippingController;
 use App\Http\Controllers\TermsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home.index');
+    return view('layouts.home.index');
 });
-Route::get('/about', function () {
-    return view('about.index');
+// Route::get('/about', function () {
+//     return view('layouts.about.index');
+// });
+// Route::get('/layouts/contact', function () {
+//     return view('layouts.contact.index');
+// });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/layouts/product', function () {
+    return view('layouts.product.index');
 });
-Route::get('/contact', function () {
-    return view('contact.index');
-});
-Route::get('/product', function () {
-    return view('product.index');
-});
-Route::get('/product', function () {
-    return view('product.prodetail');
+Route::get('/layouts/product/prodetail', function () {
+    return view('layouts.product.prodetail');
 });
 Route::controller(AboutController::class)->group(function () {
-    Route::get('/about', 'index');
+    Route::get('/layouts/about', 'index');
 });
 Route::controller(BarController::class)->group(function () {
-    Route::get('/bar', 'index');
+    Route::get('/layouts/bar', 'index');
 });
 Route::controller(ChairController::class)->group(function () {
-    Route::get('/chair', 'index');
+    Route::get('/layouts/chair', 'index');
+});
+Route::controller(ContactController::class)->group(function () {
+    Route::group(['prefix' => 'layouts/contact'], function () {
+        Route::get('/', 'index');
+        Route::post('/store', 'store')->name('contact.store');
+    });
 });
 Route::controller(ShippingController::class)->group(function () {
-    Route::get('/shipping', 'index');
+    Route::get('/layouts/shipping', 'index');
+});
+Route::controller(NewsletterController::class)->group(function () {
+    Route::post('/layouts/newsletter/store', 'store')->name('newsletter.store');
 });
 Route::controller(TermsController::class)->group(function () {
-    Route::get('/terms', 'index');
+    Route::get('/layouts/terms', 'index');
 });
 Route::controller(PrivacyController::class)->group(function () {
-    Route::get('/privacy', 'index');
+    Route::get('/layouts/privacy', 'index');
 });
+

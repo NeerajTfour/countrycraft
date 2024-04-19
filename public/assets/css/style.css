@@ -282,6 +282,11 @@ header {
     width: 100%;
     height: 90px;
 }
+/* toggle button position right */
+.navbar-toggler {
+    margin-top: 9px;
+    float: right;
+}
 /* header dropdown */
 /* .dropdown {
     position: relative;
@@ -473,8 +478,14 @@ header {
     color: #191919;
     line-height: 1.4;
 }
+.more a:hover {
+    color: #000;
+    background: #fff;
+}
+/* Image hover border and color */
 .overlay img:hover {
-    border: 8px solid #291701;
+    border: 5px solid #291701;
+    border-radius: 50px;
     transform: scale(1.1);
     transition: 1s;
     overflow: hidden !important;

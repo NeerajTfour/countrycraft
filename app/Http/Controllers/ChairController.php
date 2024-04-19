@@ -13,7 +13,7 @@ class ChairController extends Controller
     public function index()
     {
         $chair = chair::get();
-        return view('chair.index', compact('chair'));
+        return view('layouts.chair.index', compact('chair'));
     }
 
     /**

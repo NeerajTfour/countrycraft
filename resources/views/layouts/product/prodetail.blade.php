@@ -120,68 +120,70 @@
                                             <h5 class="mt-1 mb-3">CHAIR</h5>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p>Pr Number : <b>TB2456 </b></p>
+                                                    <p><b> Pr Number : </b>TB2456 </p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <p>
-                                                        <Script></Script>Short Name :
-                                                        <b>Table Tea </b>
+                                                        <Script></Script><b>Short Name : </b>
+                                                        Table Tea
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p>Stock Code : <b>CC625</b></p>
+                                                    <p><b>Stock Code : </b><span>CC625</span></p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>Product Type : <b>Wooden</b></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p>Meterial : <b>Mango Wood</b></p>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>Finish : <b>Honey</b></p>
+                                                    <p><b>Product Type : </b> <span>Wooden</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p>Length : <b>45</b></p>
+                                                    <p><b>Meterial : </b><span>Mango Wood</span></p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>Width : <b>38</b></p>
+                                                    <p><b>Finish : </b><span>Honey</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p>Height : <b>59</b></p>
+                                                    <p><b>Length : </b><span>45</span></p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p><b>Width : </b><span>38</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p><b>Height : </b><span>59</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <p>Short Discription : <b>Lorem ipsum dolor sit amet, consectetur
+                                                    <p><b>Short Discription : </b><span>Lorem ipsum dolor sit amet,
+                                                            consectetur
                                                             adipisicing elit. Repudiandae necessitatibus provident nihil hic
                                                             soluta expedita quaerat sapiente autem quae quos minus rerum
                                                             suscipit, beatae rem exercitationem odit facilis labore
-                                                            quas.</b></p>
+                                                            quas.</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <p>Meta Title : <b>table wooden</b></p>
+                                                    <p><b>Meta Title : </b><span>table wooden</span></p>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>Meta Keyword : <b>Tt695</b></p>
+                                                    <p><b>Meta Keyword : </b><span>Tt695</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-10">
-                                                    <p>Meta Description : <b>Lorem ipsum dolor sit amet consectetur
+                                                    <p><b>Meta Description : </b><span>Lorem ipsum dolor sit amet
+                                                            consectetur
                                                             adipisicing elit. Distinctio aliquid, ipsum nihil exercitationem
                                                             vero dignissimos dolorum molestiae, maiores beatae pariatur
                                                             fugiat doloribus. Sequi quo quod error perferendis consectetur
-                                                            molestiae dolorum.</b></p>
+                                                            molestiae dolorum.</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
