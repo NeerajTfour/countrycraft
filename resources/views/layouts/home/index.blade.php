@@ -11,52 +11,54 @@
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
                     aria-current="true"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="/assets/images/istockphoto-1419085349-612x612.jpg" alt="" width="100%"
-                        height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                    {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            @foreach ($slider as $slid)
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="/slider/{{ $slid->images }}" alt="" width="100%" height="480px"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                        {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> --}}
-                    <rect width="100%" height="100%" fill="#777"></rect>
-                    </svg>
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                        </svg>
 
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Example headline.</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="/contact">Sign up today</a></p>
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>{{ $slid->title }}</h1>
+                                <p>{{ $slid->para }}</p>
+                                <p><a class="btn btn-lg btn-primary" href="/contact">{{ $slid->bname }}</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item active carousel-item-start">
-                    <img src="/assets/images/milwaukee-road-seating.jpg" alt="" width="100%" height="480px"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                    <rect width="100%" height="100%" fill="#777"></rect>
-                    </svg>
+                    {{-- <div class="carousel-item active carousel-item-start">
+                        <img src="/assets/images/milwaukee-road-seating.jpg" alt="" width="100%" height="480px"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                        </svg>
 
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item carousel-item-next carousel-item-start">
-                    <img src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp" alt="" width="100%"
-                        height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                    <rect width="100%" height="100%" fill="#777"></rect>
-                    </svg>
+                    <div class="carousel-item carousel-item-next carousel-item-start">
+                        <img src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp" alt="" width="100%"
+                            height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                        </svg>
 
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>One more for good measure.</h1>
+                                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
-            </div>
+            @endforeach
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -132,9 +134,9 @@
     <section>
         <div class="container">
             <div class="row justify-content-center mt-5 mb-3 tab">
-                <p class="text-center fs-4">The most wanted products in furniture and decoration</p>
+                <p class="text-center fs-4">The most demanding products in furniture and decoration</p>
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Bookshelf</a>
+                    <a href="" class="o-btn o-btn--secondary u-spacing">Bookshelve</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Bar Cabinet</a>

@@ -7,6 +7,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ShippingController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TermsController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/welcome', function () {
+        return view('admin.welcome');
+    });
+    Route::controller(SliderController::class)->group(function () {
+        Route::group(['prefix' => 'slider'], function () {
+            Route::get('/', 'index');
+            Route::post('/store', 'store')->name('slider.store');
+        });
+    });
+});
 Route::get('/layouts/product', function () {
     return view('layouts.product.index');
 });

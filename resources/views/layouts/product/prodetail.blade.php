@@ -14,7 +14,8 @@
 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="/">CountryCraft</a></li>
+                                    <li class="breadcrumb-item"><a href="/"
+                                            style="text-decoration:none;color:black">CountryCraft</a></li>
                                     <li class="breadcrumb-item active">Product Detail</li>
                                 </ol>
                             </div>

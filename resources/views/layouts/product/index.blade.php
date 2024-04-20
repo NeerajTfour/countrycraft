@@ -10,7 +10,7 @@
                         <li><a href="/layouts/bar">Bar Cabinet</a></li>
                         <li> <a href="">Bed Side</a></li>
                         <li> <a href="">Bookshelf</a></li>
-                        <li> <a href="">chair</a></li>
+                        <li> <a href="/layouts/chair">chair</a></li>
                         <li> <a href="">Coffee Table</a></li>
                         <li> <a href="">Console Table</a></li>
                         <li> <a href="">Desk</a></li>
