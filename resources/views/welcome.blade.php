@@ -66,7 +66,6 @@
                             <button class="btn btn-outline-success" type="submit">Search</button>
                             </form> --}}
                     </div>
-
                 </div>
             </div>
         </nav>
@@ -273,7 +272,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="/assets/js/slider.js"></script>
     <script src="/assets/js/slid.js"></script>
+    {{-- CK Editor --}}
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor.create(document.querySelector("#editor")).catch(
+            (error) => {
+                console.error(error);
+            }
+        );
+    </script>
+    <script>
+        window.onload = function() {
+            var images = [
+                '/assets/images/download (8).jpg',
+                '/assets/images/download (9).jpg',
+                '/assets/images/download (10).jpg',
+                '/assets/images/download (11).jpg',
+                '/assets/images/download (7).jpg',
+                '/assets/images/download (6).jpg',
+                '/assets/images/download (5).jpg'
+            ]; // List of image URLs
+            var currentIndex = 0;
 
+            function changeImage() {
+                currentIndex = (currentIndex + 1) % images.length; // Increment index, loop back to 0 if end is reached
+                document.getElementById('image1').src = images[currentIndex]; // Change image source
+            }
+
+            setInterval(changeImage, 10 *
+                1000); // Change image every 24 hours (24 * 60 * 60 * 1000 milliseconds)
+        };
+    </script>
 </body>
 
 </html>

@@ -248,7 +248,7 @@
                                     <a href="/admin/manage_page/privacy_policy">Privacy policy</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/manage_page/terms">Terms and condition</a>
+                                    <a href="/admin/ManagePage/terms">Terms and condition</a>
                                 </li>
                                 <li>
                                     <a href="/admin/manage_page/return_policy">Return policy</a>

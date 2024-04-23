@@ -9,10 +9,14 @@ use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ShippingController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TermsController;
+use App\Models\slider;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('layouts.home.index');
+    $sliders = slider::get();
+    return view('layouts.home.index', [
+        'sliders' => $sliders,
+    ]);
 });
 // Route::get('/about', function () {
 //     return view('layouts.about.index');
@@ -62,7 +66,9 @@ Route::controller(NewsletterController::class)->group(function () {
     Route::post('/layouts/newsletter/store', 'store')->name('newsletter.store');
 });
 Route::controller(TermsController::class)->group(function () {
-    Route::get('/layouts/terms', 'index');
+    Route::group(['prefix' => 'layouts/terms'], function () {
+        Route::get('/layouts/terms', 'index');
+    });
 });
 Route::controller(PrivacyController::class)->group(function () {
     Route::get('/layouts/privacy', 'index');

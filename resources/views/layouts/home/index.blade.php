@@ -1,7 +1,8 @@
 @extends('welcome')
 
 @section('master')
-    <section class="container">
+    {{-- <section class="container">
+        @foreach ($sliders as $slider)
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
@@ -11,54 +12,52 @@
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
                     aria-current="true"></button>
             </div>
-            @foreach ($slider as $slid)
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="/slider/{{ $slid->images }}" alt="" width="100%" height="480px"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> --}}
-                        <rect width="100%" height="100%" fill="#777"></rect>
-                        </svg>
-
-                        <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>{{ $slid->title }}</h1>
-                                <p>{{ $slid->para }}</p>
-                                <p><a class="btn btn-lg btn-primary" href="/contact">{{ $slid->bname }}</a></p>
-                            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="/assets/images/istockphoto-1419085349-612x612.jpg" alt="" width="100%"
+                        height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>{{ $slider->title }}</h1>
+                            <p>{{ $slider->para }}</p>
+                            <h1>Example headline.</h1>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="/contact">Sing up today</a></p>
                         </div>
                     </div>
-                    {{-- <div class="carousel-item active carousel-item-start">
-                        <img src="/assets/images/milwaukee-road-seating.jpg" alt="" width="100%" height="480px"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        <rect width="100%" height="100%" fill="#777"></rect>
-                        </svg>
-
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item carousel-item-next carousel-item-start">
-                        <img src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp" alt="" width="100%"
-                            height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
-                        <rect width="100%" height="100%" fill="#777"></rect>
-                        </svg>
-
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
-            @endforeach
+                <div class="carousel-item active carousel-item-start">
+                    <img src="/assets/images/milwaukee-road-seating.jpg" alt="" width="100%" height="480px"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-next carousel-item-start">
+                    <img src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp" alt="" width="100%"
+                        height="480px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -67,8 +66,51 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            @endforeach
+        </div>
+    </section> --}}
+    <section class="container-fluid">
+        <div class="">
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        @foreach ($sliders as $key => $slider)
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="{{ $key }}" {{ $loop->first ? 'class=active' : '' }}
+                                aria-current="{{ $loop->first ? 'true' : '' }}"
+                                aria-label="Slide {{ $key + 1 }}"></button>
+                        @endforeach
+                    </div>
+
+                    <div class="carousel-inner">
+                        @foreach ($sliders as $key => $slider)
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <img src="/slider/{{ $slider->image }}" class="d-block w-100"
+                                    alt="Slide {{ $key + 1 }}" width="100%" height="480">
+                                <div class="carousel-caption text-start">
+                                    <h1>{{ $slider->title }}</h1>
+                                    <p>{{ $slider->para }}</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">{{ $slider->bname }}</a></p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
+
     <section class="" style="background-color: #fcfafa">
         <div class="c-section container-fluid">
             <div class="row heading">
@@ -78,13 +120,13 @@
                 <div class="c-section__hgroup">
                     <h3 class="c-section__title">Trending now</h3>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 ">
+                <div class="col-md-4 col-lg-4 col-sm-12 ">
                     <img id="image" src="/assets/images/download (7).jpg" class="" alt="" width="100%"
                         height="300px">
                     <h6 class="pt-3 mb-2">Sofa</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img src="/assets/images/download (3).jpg" alt="" width="100%" height="300px">
+                    <img id="" src="/assets/images/download (3).jpg" alt="" width="100%" height="300px">
                     <h6 class="pt-3 mb-2">Tea Table</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6">
@@ -256,11 +298,11 @@
         </div>
     </section> --}}
 @endsection
-<script>
+{{-- <script>
     window.onload = function() {
-        var images = ['/assets/images/download (7).jpg', '/assets/images/download (8).jpg',
+        var images = ['/assets/images/download (8).jpg',
             '/assets/images/download (9).jpg', '/assets/images/download (10).jpg',
-            '/assets/images/download (11).jpg',
+            '/assets/images/download (11).jpg', '/assets/images/download (7).jpg',
             '/assets/images/download (6).jpg', '/assets/images/download (5).jpg'
         ]; // List of image URLs
         var currentIndex = 0;
@@ -270,6 +312,27 @@
             document.getElementById('image').src = images[currentIndex]; // Change image source
         }
 
+        setInterval(changeImage, 60 * 60 * 1000);
+        // Change image every 24 hours (24 * 60 * 60 * 1000 milliseconds)
+    };
+</script> --}}
+<script>
+    window.onload = function() {
+        var images = [
+            '/assets/images/download (8).jpg',
+            '/assets/images/download (9).jpg',
+            '/assets/images/download (10).jpg',
+            '/assets/images/download (11).jpg',
+            '/assets/images/download (7).jpg',
+            '/assets/images/download (6).jpg',
+            '/assets/images/download (5).jpg'
+        ]; // List of image URLs
+        var currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length; // Increment index, loop back to 0 if end is reached
+            document.getElementById('image').src = images[currentIndex]; // Change image source
+        }
         setInterval(changeImage, 24 * 60 * 60 *
             1000); // Change image every 24 hours (24 * 60 * 60 * 1000 milliseconds)
     };
