@@ -1,14 +1,16 @@
 @extends('admin.welcome')
 @section('main')
-    <div class="container mb-3 pb-5" style="margin-left: 270px; margin-top: 95px">
-        <div class="row">
+    <div class="container">
+        <div class="row" style="margin-top:85px;margin-left:115px">
             <div class="col-md-12">
                 <div class="card p-3 mb-5">
-                    <form action="{{ url('/admin/manage_page/terms/edit') }}" method="POST" enctype="multipart/form-data">
-                        @csrf @method('POST') @isset($terms)
+                    <form action="{{ url('/admin/ManagePage/term/edit') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('POST')
+                        @isset($terms)
                             <div class="row">
                                 <input type="hidden" value="{{ $terms->id }}" name="terms_id" />
-                                <div class="col-md-8 mb-3">
+                                <div class="col-md-10 mb-3">
                                     <textarea name="text" id="editor" cols="50" rows="30">{{ $terms->text }}</textarea>
                                 </div>
                             </div>
@@ -22,10 +24,9 @@
                 </div>
             </div>
         </div>
-
     </div>
 
-    <script>
+    {{-- <script>
         ClassicEditor
             .create(document.querySelector('#editor'), {
                 ckfinder: {
@@ -35,5 +36,5 @@
             .catch(error => {
                 console.error(error);
             });
-    </script>
+    </script> --}}
 @endsection

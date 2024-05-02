@@ -12,8 +12,8 @@ class TermsController extends Controller
      */
     public function index()
     {
-        $term = terms::get();
-        return view('layouts.terms.terms', compact('term'));
+        $terms = terms::first();
+        return view('layouts.terms.terms', compact('terms'));
     }
 
     /**
@@ -21,7 +21,7 @@ class TermsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.ManagePage.term');
     }
 
     /**
@@ -29,7 +29,11 @@ class TermsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $terms = new terms;
+        $terms->text = $request->text;
+
+        $terms->save();
+        return back();
     }
 
     /**
@@ -43,9 +47,16 @@ class TermsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(terms $terms)
+    public function edit(Request $request, terms $terms)
     {
-        //
+        $terms = terms::findOrFail($request->terms_id);
+        if ($terms) {
+            $terms->text = $request->text;
+            $terms->save();
+            return redirect('/admin/ManagePage/terms');
+        } else {
+            return redirect('/admin/ManagePage/terms');
+        }
     }
 
     /**

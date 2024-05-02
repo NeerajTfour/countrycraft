@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <header class="header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <header class="header sticky-top conrainer-fluid">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container-fluid">
                 <div class="row w-100 me-auto">
                     <div class="col-lg-4 ms-2 ps-3">
-                        <img src="/assets/images/logo-black.png" width="150px" class="mt-3 ps-5"
-                            style="margin-top: -25px; margin-left:-34px;" alt="company logo">
+                        <img src="/assets/images/logo-black.png" width="150px" class="mt-2 ps-5"
+                            style="margin-top: -20px; margin-left:-34px;" alt="company logo">
                         {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,8 @@
                     </div>
 
                     <div class=" col-lg-6 collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-dark fs-5 gap-2">
-                            <li class="nav-item">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 gap-3 ">
+                            <li class="nav-item ">
                                 <a class="nav-link" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item">
@@ -71,16 +71,14 @@
         </nav>
     </header>
 
-
     {{-- <section>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md">
-
                 </div>
             </div>
-        </div> --}}
-    </section>
+        </div>
+    </section> --}}
 
     <section class="container-fluid">
         <div class="row">
@@ -93,9 +91,9 @@
 
             <div class="footer-content">
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-center">
 
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
                             <div class="footer-info ms-3 ps-2">
                                 <img src="/assets/images/logo-white.png" width="130px" class="ps-3 pt-3"
                                     style="margin-top: -25px; margin-left:-34px;" alt="company logo">
@@ -112,7 +110,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
+                        <div class="col-lg-2 col-md-6 col-sm-6 mx-auto footer-links justify-content-center">
                             <h4>Shop</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/">Furniture</a></li>
@@ -133,7 +131,8 @@
                                 </li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/layouts/contact">Showroom
                                         Locator</a></li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/fairs">Fairs &amp; Events</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a href="/layouts/fair">Fairs &amp; Events</a>
+                                </li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/career">Careers</a></li>
                             </ul>
                         </div>
@@ -281,7 +280,7 @@
             }
         );
     </script>
-    <script>
+    {{-- <script>
         window.onload = function() {
             var images = [
                 '/assets/images/download (8).jpg',
@@ -302,7 +301,7 @@
             setInterval(changeImage, 10 *
                 1000); // Change image every 24 hours (24 * 60 * 60 * 1000 milliseconds)
         };
-    </script>
+    </script> --}}
 </body>
 
 </html>

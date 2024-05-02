@@ -7,7 +7,7 @@
             <div class="">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="/assets/images/1660920837778.jpg" alt="" width="100%" height="220px">
+                        <img src="/assets/images/Picture13.jpg" alt="" width="100%" height="420px">
                     </div>
                 </div>
                 <div class="row ">

@@ -1,8 +1,10 @@
 $(".product-slider__slider").slick({
     infinite: true,
     autoplay: true,
-    nextArrow: '<button type="button" class="slick-next">></button>',
-    prevArrow: '<button type="button" class="slick-prev"><</button>',
+    nextArrow:
+        '<button type="button" class="slick-next fs-2 rounded-circle"><i class="fa fa-chevron-right bg-transparent"></i></button>',
+    prevArrow:
+        '<button type="button" class="slick-prev fs-2 rounded-circle"><i class="fa fa-chevron-left"></i></button>',
     slidesToShow: 3,
     slidesToScroll: 2,
     swipeToSlide: true,

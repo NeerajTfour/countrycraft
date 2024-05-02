@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Daiwik Craftorium Detail | Daiwik - Admin & Dashboard Template
+        CountryCraft Detail | CCE - Admin & Dashboard Template
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
@@ -167,11 +167,11 @@
                             </li>
                             --}}
 
-                        <li>
+                        {{-- <li>
                             <a href="javascript: void(0);" class=" has-arrow waves-effect">
                                 <i class="mdi mdi-head-cog-outline"></i>
                                 <span>Audience</span>
-                                {{-- <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i> --}}
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
@@ -182,7 +182,7 @@
                                 </li>
                             </ul>
 
-                        </li>
+                        </li> --}}
 
                         {{--
                             <li>
@@ -195,7 +195,7 @@
                                 </a>
                             </li>
                             --}}
-                        <li>
+                        {{-- <li>
                             <a href="javascript:void(0);" class="has-arrow waves-effect">
                                 <i class="ri ri-store-3-line"></i>
                                 <span>Inquiry</span>
@@ -208,7 +208,7 @@
                                     <a href="/admin/inquiry/inqTable">View Inquiry</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
 
                         {{--
                             <li>
@@ -222,7 +222,7 @@
                             </li>
                             --}}
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <a href="" class="has-arrow waves-effect">
                                 <i class="ri-store-2-line"></i>
                                 <span>Slider</span>
                             </a>
@@ -245,10 +245,10 @@
                                     <a href="/admin/manage_page/about">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/manage_page/privacy_policy">Privacy policy</a>
+                                    <a href="/admin/ManagePage/privacy">Privacy policy</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/ManagePage/terms">Terms and condition</a>
+                                    <a href="/admin/ManagePage/term">Terms and condition</a>
                                 </li>
                                 <li>
                                     <a href="/admin/manage_page/return_policy">Return policy</a>
@@ -375,18 +375,12 @@
 
     <!-- init js -->
     <script src="assets/js/pages/form-editor.init.js"></script>
-
     <script src="/assets/js/app.js"></script>
     {{-- calendar --}}
     <script src="/assets/js/pages/calendar.init.js"></script>
     <!-- plugin js -->
     <script src="/assets/libs/moment/min/moment.min.js"></script>
     <script src="/assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-    <script src="/assets/libs/@fullcalendar/core/main.min.js"></script>
-    <script src="/assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-    <script src="/assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-    <script src="/assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-    <script src="/assets/libs/@fullcalendar/interaction/main.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- Sorting Table --}}
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

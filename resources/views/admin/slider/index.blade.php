@@ -11,7 +11,6 @@
 
         <div class="page-content">
             <div class="container-fluid">
-
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
@@ -71,6 +70,65 @@
                                                         placeholder="bname" value="{{ old('bname') }}">
                                                     @if ($errors->has('bname'))
                                                         <span class="text-danger">{{ $errors->first('bname') }}</span>
+                                                    @endif
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <label for="" class="mb-3">Image</label>
+                                                    <input type="file" name="image" class="form-control mb-3"
+                                                        placeholder="image">
+                                                    @if ($errors->has('image'))
+                                                        <span class="text-danger">{{ $errors->first('image') }}</span>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md">
+                                                    <button type="submit" class="btn btn-md btn-primary">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- B-slider --}}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h2 class="text-primary mb-5">B_Slider Information</h2>
+                                    </div>
+                                    <div class="col-md-2">
+                                        {{-- <a href="/admin/slider/sliderTable" class="btn btn-md btn-primary">View</a> --}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <form action="{{ route('b_slider.store') }}" method="POST"
+                                            enctype="multipart/form-data" class="form-group">
+                                            @csrf
+                                            {{-- @method('POST') --}}
+                                            <div class="row  form-group">
+                                                <div class="col-md-4 form-group">
+                                                    <label for="" class="mb-3">Heading</label>
+                                                    <input type="text" name="heading" class="form-control mb-3"
+                                                        placeholder="heading" value="{{ old('heading') }}">
+                                                    @if ($errors->has('heading'))
+                                                        <span class="text-danger">{{ $errors->first('heading') }}</span>
+                                                    @endif
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <label for="" class="mb-3">Product Name</label>
+                                                    <input type="text" name="pro_name" class="form-control mb-3"
+                                                        placeholder="product name" value="{{ old('pro_name') }}">
+                                                    @if ($errors->has('pro_name'))
+                                                        <span class="text-danger">{{ $errors->first('pro_name') }}</span>
                                                     @endif
                                                 </div>
                                                 <div class="col-md-4 form-group">

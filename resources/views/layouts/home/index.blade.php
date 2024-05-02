@@ -86,7 +86,7 @@
                         @foreach ($sliders as $key => $slider)
                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                                 <img src="/slider/{{ $slider->image }}" class="d-block w-100"
-                                    alt="Slide {{ $key + 1 }}" width="100%" height="480">
+                                    alt="Slide {{ $key + 1 }}" width="100%" height="531px">
                                 <div class="carousel-caption text-start">
                                     <h1>{{ $slider->title }}</h1>
                                     <p>{{ $slider->para }}</p>
@@ -110,28 +110,35 @@
             </div>
         </div>
     </section>
-
     <section class="" style="background-color: #fcfafa">
         <div class="c-section container-fluid">
-            <div class="row heading">
+            {{-- <div class="row heading">
                 <h1>Trending Style</h1>
-            </div>
-            <div class="row overlay p-3">
-                <div class="c-section__hgroup">
-                    <h3 class="c-section__title">Trending now</h3>
+            </div> --}}
+            <div class="row p-1">
+                <div class="c-section__hgroup heading">
+                    <h1>T R E N D I N G <span> </span> S T Y L E</h1>
+                    {{-- <h3 class="c-section__title mt-3">Trending Style</h3> --}}
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 ">
-                    <img id="image" src="/assets/images/download (7).jpg" class="" alt="" width="100%"
-                        height="300px">
-                    <h6 class="pt-3 mb-2">Sofa</h6>
+                <div class="col-md-4 col-lg-4 col-sm-12 hover14 ">
+                    <figure>
+                        <img id="image" src="/assets/images/download (9).jpg" class="" alt=""
+                            width="100%" height="350px">
+                    </figure>
+                    <h6 class="mb-2 ps-3">Sofa</h6>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img id="" src="/assets/images/download (3).jpg" alt="" width="100%" height="300px">
-                    <h6 class="pt-3 mb-2">Tea Table</h6>
+                <div class="col-md-4 col-lg-4 col-sm-6 hover14">
+                    <figure>
+                        <img id="" src="/assets/images/download (3).jpg" alt="" width="100%"
+                            height="350px">
+                    </figure>
+                    <h6 class="mb-2 ps-3">Tea Table</h6>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6">
-                    <img src="/assets/images/download (2).jpg" alt="" width="100%" height="300px">
-                    <h6 class="pt-3 mb-2">Coffee Table</h6>
+                <div class="col-md-4 col-lg-4 col-sm-6 hover14">
+                    <figure>
+                        <img src="/assets/images/download (4).jpg" alt="" width="100%" height="350px">
+                    </figure>
+                    <h6 class="mb-2 ps-3">Coffee Table</h6>
                 </div>
             </div>
         </div>
@@ -139,15 +146,15 @@
     <section class="" style="background-color: #fcfafa">
         <div class="container-fluid">
             <div class="row heading">
-                <h1>About Furniture</h1>
+                <h1>A B O U T F U R N I T U R E</h1>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-6 col-lg-6 p-3 about-img">
-                    <img src="/assets/images/H&H1.jpg" alt="" width="100%" height="500">
+            <div class="row ms-2 me-2 mb-3">
+                <div class="col-md-6 col-lg-6">
+                    <img src="/assets/images/upholstered-dining-chairs-4.jpg" alt="" width="100%" height="100%">
                 </div>
                 <div class="col-md-6 col-lg-6 pt-3">
-                    <h4>Online furniture: where each piece tells its story </h4>
-                    <p class="">
+                    <h4 class="text-muted">Online furniture: where each piece tells its story </h4>
+                    <p class="text-muted lh-lg">
                         At CCE, we believe that your home is the canvas of your own story. All of our online furniture
                         and decor accessories are meticulously selected to inspire, excite and transform your space into
                         a reflection of your identity. Our philosophy focuses on offering practical and aesthetic
@@ -160,9 +167,9 @@
                         expressiveness of contemporary style, offering you infinite possibilities to update your home.
                     </p>
 
-                    <h4> Live every moment with style and authenticity </h4>
+                    <h4 class="text-muted"> Live every moment with style and authenticity </h4>
 
-                    <p>CCE, your online furniture shop
+                    <p class="text-muted lh-lg">CCE, your online furniture shop
                         Our spanish furniture is more than objects; they become part of your story, evolving with you in
                         each new chapter. Allow us to accompany you on this journey towards renewal and personal
                         expression, where each piece is a step towards a space that speaks of you and your passions.
@@ -211,9 +218,9 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-12">
-                    <img class="c-cardegory__img blur-up lazyloaded" alt="Ratan" width="100%" height="450"
+                    <img class="c-cardegory__img blur-up lazyloaded" alt="Ratan" width="100%" height="100%"
                         data-src="https://cdn.sklum.com/wk/img/core/skl/promos/home/240402-SK-BANNER-special-price-rattan-Desktop.jpg?v=1711523777"
-                        src="/assets/images/mspdd-milwaukee-0112-hor-wide.webp">
+                        src="/assets/images/Picture11.jpg">
                     <div class="text-block">
                         <h4>Nature</h4>
                         <p>What a beautiful sunrise</p>
@@ -224,13 +231,14 @@
     </section>
     <section>
         <div class="">
-            <div class="row  about-img" style="background-color: #fcfafa">
+            <div class="row about-img" style="background-color: #fcfafa">
                 <div class="col-md-4">
-                    <img src="/assets/images/download (5).jpg" alt="" width="100%" height="280px">
+                    <img src="/assets/images/Picture4.jpg" alt="" width="100%" height="280px">
                 </div>
                 <div class="col-md-4">
                     <h3 class="text-center mt-3 text-info">Why Choose Us?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe repellat optio maxime, nisi minus
+                    <p class="text-muted lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe repellat
+                        optio maxime, nisi minus
                         dicta asperiores sapiente harum eaque illo dignissimos molestiae! Nobis, praesentium quis tenetur
                         iure eaque ullam omnis.
                     </p>
@@ -239,57 +247,31 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="/assets/images/download (3).jpg" alt="" width="100%" height="280px">
+                    <img src="/assets/images/Picture26.jpg" alt="" width="100%" height="280px">
                 </div>
             </div>
         </div>
     </section>
     <section>
         <div class="row heading">
-            <h1>Our Category</h1>
-            <div class="product-slider">
-                {{-- <div class="product-slider__category">
-                    <h1>Product Category</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus sit amet augue vel
-                        scelerisque. Sed cursus lorem sit amet varius hendrerit. Integer venenatis mollis ipsum. Sed
-                        dapibus iaculis ex, non vestibulum tellus fringilla
-                        sed. Maecenas eget molestie tellus.</p>
-                    <a href="/">See all products</a>
-                </div> --}}
+            <h1>O U R C A T E G O R Y</h1>
+        </div>
+        <div class="row product-slider">
+            <div class="col-md-12"> <!-- Adjust column size based on your layout -->
                 <div class="product-slider__slider container-fluid">
-                    <div class="product-slider__item ">
-                        <img src="/assets/images/download (1).jpg" class="rounded-circle" width="100%">
-                        <h3>CountryCraft </h3>
-                        <small>small table</small>
-                    </div>
-
-                    <div class="product-slider__item">
-                        <img src="/assets/images/download (3).jpg" class="rounded-circle" width="100%">
-                        <h3>CountryCraft </h3>
-                        <small>Table</small>
-                    </div>
-
-                    <div class="product-slider__item">
-                        <img src="/assets/images/download (2).jpg" class="rounded-circle" width="100%">
-                        <h3>CountryCraft </h3>
-                        <small>Tea Table</small>
-                    </div>
-
-                    <div class="product-slider__item">
-                        <img src="/assets/images/download (4).jpg" class="rounded-circle" width="100%">
-                        <h3>CountryCraft</h3>
-                        <small>Coffee Table</small>
-                    </div>
-
-                    <div class="product-slider__item">
-                        <img src="/assets/images/download (5).jpg" class="rounded-circle" width="100%">
-                        <h3>CountryCraft</h3>
-                        <small>Dining Table</small>
-                    </div>
+                    @foreach ($bsliders as $bslider)
+                        <div class="product-slider__item">
+                            <img src="/b_slider/{{ $bslider->image }}" class="rounded-circle" width="100%"
+                                height="100%" alt="Slider Image">
+                            <h3>{{ $bslider->heading }}</h3>
+                            <small>{{ $bslider->pro_name }}</small>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
+
     {{-- <section>
         <div class="container-fluid">
             <div class="row" id="slid">
@@ -323,7 +305,6 @@
             '/assets/images/download (9).jpg',
             '/assets/images/download (10).jpg',
             '/assets/images/download (11).jpg',
-            '/assets/images/download (7).jpg',
             '/assets/images/download (6).jpg',
             '/assets/images/download (5).jpg'
         ]; // List of image URLs
