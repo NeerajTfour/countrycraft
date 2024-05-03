@@ -262,10 +262,10 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
-                                    <a href="/admin/category/add">Add Category</a>
+                                    <a href="{{ route('category.create') }}">Add Category</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/category">View Category</a>
+                                    <a href="{{ route('category.list') }}">View Category</a>
                                 </li>
                             </ul>
                         </li>

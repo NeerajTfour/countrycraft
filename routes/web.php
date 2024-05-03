@@ -51,8 +51,12 @@ Route::group(['prefix' => 'admin'], function () {
     });
     Route::controller(CategoryController::class)->group(function () {
         Route::group(['prefix' => 'category'], function () {
+            Route::get('/categories', 'index')->name('category.list');
             Route::get('/add', 'create')->name('category.create');
             Route::post('/add', 'store')->name('category.store');
+            Route::get('/edit/{id}', 'edit')->name('category.edit');
+            Route::post('/edit/{id}', 'update')->name('category.update');
+            Route::post('/delete', 'destroy')->name('category.destroy');
         });
     });
 });

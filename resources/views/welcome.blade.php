@@ -91,7 +91,7 @@
 
             <div class="footer-content">
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <div class="row">
 
                         <div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
                             <div class="footer-info ms-3 ps-2">

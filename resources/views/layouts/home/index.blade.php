@@ -110,31 +110,31 @@
             </div>
         </div>
     </section>
-    <section class="" style="background-color: #fcfafa">
-        <div class="c-section container-fluid">
+    <section class="container-fluid" style="background-color: #fcfafa">
+        <div class="c-section ">
             {{-- <div class="row heading">
                 <h1>Trending Style</h1>
             </div> --}}
-            <div class="row p-1">
-                <div class="c-section__hgroup heading">
+            <div class="row p-1 m-1">
+                <div class="c-section__hgroup heading ">
                     <h1>T R E N D I N G <span> </span> S T Y L E</h1>
                     {{-- <h3 class="c-section__title mt-3">Trending Style</h3> --}}
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 hover14 ">
+                <div class="col-md-4 col-lg-4 col-sm-12 hover14 trend px-0" style="background-color: #fcfafa">
                     <figure>
                         <img id="image" src="/assets/images/download (9).jpg" class="" alt=""
                             width="100%" height="350px">
                     </figure>
                     <h6 class="mb-2 ps-3">Sofa</h6>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 hover14">
+                <div class="col-md-4 col-lg-4 col-sm-6 hover14 trend2 px-0">
                     <figure>
                         <img id="" src="/assets/images/download (3).jpg" alt="" width="100%"
                             height="350px">
                     </figure>
                     <h6 class="mb-2 ps-3">Tea Table</h6>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 hover14">
+                <div class="col-md-4 col-lg-4 col-sm-6 hover14 trend px-0">
                     <figure>
                         <img src="/assets/images/download (4).jpg" alt="" width="100%" height="350px">
                     </figure>
@@ -211,7 +211,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="container-fluid">
         <div class=" cont">
             <div class="row  heading">
                 <h1>Furniture At Home</h1>
@@ -227,10 +227,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="">
             <div class="row about-img" style="background-color: #fcfafa">
                 <div class="col-md-4">
                     <img src="/assets/images/Picture4.jpg" alt="" width="100%" height="280px">
@@ -252,7 +248,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="">
         <div class="row heading">
             <h1>O U R C A T E G O R Y</h1>
         </div>

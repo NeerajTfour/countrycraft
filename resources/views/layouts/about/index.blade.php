@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('master')
-    <section class="">
+    <section class="container-fluid">
         <div class="">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-12 about-banner">
@@ -62,8 +62,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 text-muted lh-lg hover01">
                     <figure>
-                        <img src="/assets/images/WhatsApp Image 2024-05-01 at 14.54.08.jpeg" alt="" class="mb-3"
-                            width="100%" height="330px">
+                        <img src="/assets/images/WhatsApp Image 2024-05-01 at 14.54.08.jpeg" alt=""
+                            class="mb-3 rounded-pill" width="100%" height="330px">
                     </figure>
                     <h6 class="mb-2"><b>2021</b></h6>
                     <p><b>Country Craft Exports Pvt. Ltd.</b> Now it’s time to take a big leap by establishing an export

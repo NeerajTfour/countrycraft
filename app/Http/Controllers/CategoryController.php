@@ -12,7 +12,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::where('status', '1')->get();
+        return view('admin.category.index', compact('categories'));
     }
 
     /**
@@ -20,7 +21,10 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.add');
+        $categories = Category::whereNull('category_id')->get();
+        return view('admin.category.add', compact('categories'));
+        // dd($categories);
+
     }
 
     /**
@@ -34,8 +38,7 @@ class CategoryController extends Controller
         );
         // dd($data);
         $create = Category::create($data);
-        // $data->save();
-        return view('admin.category.add');
+        return redirect()->route('category.create');
 
     }
 
@@ -50,9 +53,12 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(category $category)
+    public function edit(Request $request, category $category)
     {
-        //
+        $id = $request->id;
+        $categories = Category::whereNull('category_id')->get();
+        $category = Category::find($id);
+        return view('admin.category.edit', compact('categories', 'category'));
     }
 
     /**
@@ -60,14 +66,25 @@ class CategoryController extends Controller
      */
     public function update(Request $request, category $category)
     {
-        //
+        $id = $request->id;
+        $data = array(
+            'name' => $request->name,
+            'category_id' => $request->category_id,
+        );
+        // dd($data);
+        $category = Category::find($id);
+        $category->update($data);
+        return redirect()->route('category.list');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(category $category)
+    public function destroy(Request $request, category $category)
     {
-        //
+        $id = $request->id;
+        $category = Category::find($id);
+        $category->delete();
+        return response()->json('success');
     }
 }

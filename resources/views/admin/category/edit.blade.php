@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <form action="{{ route('category.store') }}" method="POST"
+                                        <form action="{{ route('category.update', $category->id) }}" method="POST"
                                             enctype="multipart/form-data" class="form-group">
                                             @csrf
                                             @method('POST')
@@ -45,7 +45,7 @@
                                                 <div class="col-md-4 form-group">
                                                     <label for="" class="mb-3">Category</label>
                                                     <input type="text" name="name" class="form-control mb-3"
-                                                        placeholder="Category" value="">
+                                                        placeholder="Category" value="{{ $category->name }}">
                                                     @if ($errors->has('name'))
                                                         <span class="text-danger">{{ $errors->first('name') }}</span>
                                                     @endif
@@ -53,9 +53,13 @@
                                                 <div class="col-md-4 form-group">
                                                     <label for="" class="mb-3">Sub Category</label>
                                                     <select name="category_id" class="form-control" id="">
-                                                        <option value="">No category</option>
+                                                        <option value=""
+                                                            @if ($category->category_id == null) selected @endif>No
+                                                            category</option>
                                                         @foreach ($categories as $categorie)
-                                                            <option value="{{ $categorie->id }}">{{ $categorie->name }}
+                                                            <option value="{{ $categorie->id }}"
+                                                                @if ($category->category_id != null && $category->category_id == $categorie->id) selected @endif>
+                                                                {{ $categorie->name }}
                                                             </option>
                                                         @endforeach
                                                     </select>
