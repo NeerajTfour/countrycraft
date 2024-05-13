@@ -91,7 +91,7 @@
 
             <div class="footer-content">
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-center">
 
                         <div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
                             <div class="footer-info ms-3 ps-2">
@@ -110,7 +110,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-6 mx-auto footer-links justify-content-center">
+                        <div class="col-lg-2 col-md-6 col-sm-6 mx-auto footer-links">
                             <h4>Shop</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/">Furniture</a></li>
@@ -137,7 +137,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
+                        <div class="col-lg-2 col-md-6 col-sm-6 footer-links ">
                             <h4>Help</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/layouts/contact">Contact Us</a></li>

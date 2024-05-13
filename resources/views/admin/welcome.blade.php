@@ -11,6 +11,7 @@
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.0.0-alpha.12/lib.min.js"> --}}
     {{-- calendar Css --}}
     <!-- Plugin css -->
     {{-- <link rel="stylesheet" href="/assets/libs/@fullcalendar/core/main.min.css" type="text/css" />
@@ -20,6 +21,13 @@
 
     <!-- Bootstrap Css -->
     <link href="/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        nav .w-5 {
+            display: none;
+        }
+    </style>
     <!-- Icons Css -->
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -235,6 +243,9 @@
                                 </li>
                             </ul>
                         </li>
+                        <li><a href="/admin/newsletter">Newsletter</a></li>
+                        <li>
+                        <li><a href="{{ route('contact.list') }}">Contact</a></li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="ri-chat-1-line"></i>
@@ -265,7 +276,7 @@
                                     <a href="{{ route('category.create') }}">Add Category</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('category.list') }}">View Category</a>
+                                    <a href="{{ route('category.view') }}">View Category</a>
                                 </li>
                             </ul>
                         </li>
@@ -276,10 +287,10 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
-                                    <a href="/admin/product/add">Add Product</a>
+                                    <a href="{{ route('product.create') }}">Add Product</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/product">View Product</a>
+                                    <a href="{{ route('product.view') }}">View Product</a>
                                 </li>
                             </ul>
                         </li>
@@ -363,18 +374,23 @@
 
     <!-- Right bar overlay-->
     <div class="rightbar-overlay"></div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
     <!-- JAVASCRIPT -->
     <script src="/assets/libs/jquery/jquery.min.js"></script>
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="/assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="/assets/libs/simplebar/simplebar.min.js"></script>
     <script src="/assets/libs/node-waves/waves.min.js"></script>
     <!--tinymce js-->
-    <script src="assets/libs/tinymce/tinymce.min.js"></script>
+    <script src="/assets/libs/tinymce/tinymce.min.js"></script>
 
     <!-- init js -->
-    <script src="assets/js/pages/form-editor.init.js"></script>
+    <script src="/assets/js/pages/form-editor.init.js"></script>
     <script src="/assets/js/app.js"></script>
     {{-- calendar --}}
     <script src="/assets/js/pages/calendar.init.js"></script>

@@ -49,154 +49,161 @@
                                     <div class="col-xl-5">
                                         <div class="product-detail">
                                             <div class="row">
-                                                <div class="col-3">
-                                                    {{-- @foreach (product->getMedia('product-image') as $item) --}}
-                                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                                                        aria-orientation="vertical">
-                                                        <a class="nav-link active" id="product-1-tab" data-bs-toggle="pill"
-                                                            href="#product-1" role="tab">
-                                                            <img src="/assets/images/download (7).jpg" alt="img-1"
-                                                                class="img-fluid mx-auto d-block tab-img rounded">
+                                                @foreach ($products as $product)
+                                                    <div class="col-3">
+                                                        {{-- @foreach (product->getMedia('product-image') as $item) --}}
 
-                                                        </a>
-                                                        <a class="nav-link" id="product-2-tab" data-bs-toggle="pill"
-                                                            href="#product-2" role="tab">
-                                                            <img src=" /assets/images/download (8).jpg " alt="img-5"
-                                                                class="img-fluid mx-auto d-block tab-img rounded">
-                                                        </a>
-                                                        <a class="nav-link" id="product-3-tab" data-bs-toggle="pill"
-                                                            href="#product-3" role="tab">
-                                                            <img src="/assets/images/download (9).jpg" alt="img-3"
-                                                                class="img-fluid mx-auto d-block tab-img rounded">
-                                                        </a>
-                                                        <a class="nav-link" id="product-4-tab" data-bs-toggle="pill"
-                                                            href="#product-4" role="tab">
-                                                            <img src="/assets/images/download (10).jpg" alt="img-4"
-                                                                class="img-fluid mx-auto d-block tab-img rounded">
-                                                        </a>
-                                                    </div>
-                                                    {{-- @endforeach --}}
-                                                </div>
-                                                <div class="col-md-8 col-9">
-                                                    <div class="tab-content" id="v-pills-tabContent">
-                                                        <div class="tab-pane fade show active" id="product-1"
-                                                            role="tabpanel">
-                                                            <div class="product-img">
-                                                                {{-- @foreach (product->getMedia('product-image') as $item) --}}
-                                                                {{-- <td><img src="{{$item->getUrl()}}" alt="" class="rounded-circle" width="50px" height="50px"></td> --}}
-
+                                                        <div class="nav flex-column nav-pills" id="v-pills-tab"
+                                                            role="tablist" aria-orientation="vertical">
+                                                            <a class="nav-link active" id="product-1-tab"
+                                                                data-bs-toggle="pill" href="#product-1" role="tab">
                                                                 <img src="/assets/images/download (7).jpg" alt="img-1"
-                                                                    class="img-fluid mx-auto d-block"
-                                                                    data-zoom="/assets/images/download (7).jpg">
-                                                                {{-- @endforeach --}}
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="product-2" role="tabpanel">
-                                                            <div class="product-img">
-                                                                <img src="/assets/images/download (8).jpg" alt="img-5"
-                                                                    class="img-fluid mx-auto d-block">
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="product-3" role="tabpanel">
-                                                            <div class="product-img">
+                                                                    class="img-fluid mx-auto d-block tab-img rounded">
+
+                                                            </a>
+                                                            <a class="nav-link" id="product-2-tab" data-bs-toggle="pill"
+                                                                href="#product-2" role="tab">
+                                                                <img src=" /assets/images/download (8).jpg " alt="img-5"
+                                                                    class="img-fluid mx-auto d-block tab-img rounded">
+                                                            </a>
+                                                            <a class="nav-link" id="product-3-tab" data-bs-toggle="pill"
+                                                                href="#product-3" role="tab">
                                                                 <img src="/assets/images/download (9).jpg" alt="img-3"
-                                                                    class="img-fluid mx-auto d-block">
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="product-4" role="tabpanel">
-                                                            <div class="product-img">
+                                                                    class="img-fluid mx-auto d-block tab-img rounded">
+                                                            </a>
+                                                            <a class="nav-link" id="product-4-tab" data-bs-toggle="pill"
+                                                                href="#product-4" role="tab">
                                                                 <img src="/assets/images/download (10).jpg" alt="img-4"
-                                                                    class="img-fluid mx-auto d-block">
+                                                                    class="img-fluid mx-auto d-block tab-img rounded">
+                                                            </a>
+                                                        </div>
+                                                        {{-- @endforeach --}}
+                                                    </div>
+                                                    <div class="col-md-8 col-9">
+                                                        <div class="tab-content" id="v-pills-tabContent">
+                                                            <div class="tab-pane fade show active" id="product-1"
+                                                                role="tabpanel">
+                                                                <div class="product-img">
+                                                                    {{-- @foreach (product->getMedia('product-image') as $item) --}}
+                                                                    {{-- <td><img src="{{$item->getUrl()}}" alt="" class="rounded-circle" width="50px" height="50px"></td> --}}
+
+                                                                    <img src="/assets/images/download (7).jpg"
+                                                                        alt="img-1" class="img-fluid mx-auto d-block"
+                                                                        data-zoom="/assets/images/download (7).jpg">
+                                                                    {{-- @endforeach --}}
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="product-2" role="tabpanel">
+                                                                <div class="product-img">
+                                                                    <img src="/assets/images/download (8).jpg"
+                                                                        alt="img-5" class="img-fluid mx-auto d-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="product-3" role="tabpanel">
+                                                                <div class="product-img">
+                                                                    <img src="/assets/images/download (9).jpg"
+                                                                        alt="img-3" class="img-fluid mx-auto d-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="product-4" role="tabpanel">
+                                                                <div class="product-img">
+                                                                    <img src="/assets/images/download (10).jpg"
+                                                                        alt="img-4" class="img-fluid mx-auto d-block">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                         <!-- end product img -->
                                     </div>
-                                    <div class="col-xl-7">
-                                        <div class="mt-4 mt-xl-3">
-                                            <a href="#" class="text-primary fs-3"></a>
-                                            <h5 class="mt-1 mb-3">CHAIR</h5>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p><b> Pr Number : </b>TB2456 </p>
+                                    @foreach ($products as $product)
+                                        <div class="col-xl-7">
+                                            <div class="mt-4 mt-xl-3">
+                                                <a href="#" class="text-primary fs-3"></a>
+                                                <h5 class="mt-1 mb-3">{{ $product->category->name }}</h5>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b> Pr Number : </b>TB2456 </p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>
+                                                            <Script></Script><b>Short Name : </b>
+                                                            Table Tea
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <p>
-                                                        <Script></Script><b>Short Name : </b>
-                                                        Table Tea
-                                                    </p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b>Stock Code : </b><span>CC625</span></p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p><b>Product Type : </b> <span>Wooden</span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p><b>Stock Code : </b><span>CC625</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b>Meterial : </b><span>Mango Wood</span></p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p><b>Finish : </b><span>Honey</span></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <p><b>Product Type : </b> <span>Wooden</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b>Length : </b><span>45</span></p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p><b>Width : </b><span>38</span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p><b>Meterial : </b><span>Mango Wood</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b>Height : </b><span>59</span></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <p><b>Finish : </b><span>Honey</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p><b>Short Discription : </b><span>Lorem ipsum dolor sit amet,
+                                                                consectetur
+                                                                adipisicing elit. Repudiandae necessitatibus provident nihil
+                                                                hic
+                                                                soluta expedita quaerat sapiente autem quae quos minus rerum
+                                                                suscipit, beatae rem exercitationem odit facilis labore
+                                                                quas.</span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p><b>Length : </b><span>45</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b>Meta Title : </b><span>table wooden</span></p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p><b>Meta Keyword : </b><span>Tt695</span></p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <p><b>Width : </b><span>38</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        <p><b>Meta Description : </b><span>Lorem ipsum dolor sit amet
+                                                                consectetur
+                                                                adipisicing elit. Distinctio aliquid, ipsum nihil
+                                                                exercitationem
+                                                                vero dignissimos dolorum molestiae, maiores beatae pariatur
+                                                                fugiat doloribus. Sequi quo quod error perferendis
+                                                                consectetur
+                                                                molestiae dolorum.</span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p><b>Height : </b><span>59</span></p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        {{-- <img src="{{ asset($qrCodePath) }}" alt="QR Code"> --}}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p><b>Short Discription : </b><span>Lorem ipsum dolor sit amet,
-                                                            consectetur
-                                                            adipisicing elit. Repudiandae necessitatibus provident nihil hic
-                                                            soluta expedita quaerat sapiente autem quae quos minus rerum
-                                                            suscipit, beatae rem exercitationem odit facilis labore
-                                                            quas.</span></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <p><b>Meta Title : </b><span>table wooden</span></p>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p><b>Meta Keyword : </b><span>Tt695</span></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-10">
-                                                    <p><b>Meta Description : </b><span>Lorem ipsum dolor sit amet
-                                                            consectetur
-                                                            adipisicing elit. Distinctio aliquid, ipsum nihil exercitationem
-                                                            vero dignissimos dolorum molestiae, maiores beatae pariatur
-                                                            fugiat doloribus. Sequi quo quod error perferendis consectetur
-                                                            molestiae dolorum.</span></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    {{-- <img src="{{ asset($qrCodePath) }}" alt="QR Code"> --}}
-                                                </div>
-                                            </div>
-                                            {{-- <h5 class="mt-2"><del class="text-muted me-2">$252</del>$240 <span class="text-danger font-size-12 ms-2">25 % Off</span></h5>
+                                                {{-- <h5 class="mt-2"><del class="text-muted me-2">$252</del>$240 <span class="text-danger font-size-12 ms-2">25 % Off</span></h5>
                                                     <p class="mt-3">To achieve this, it would be necessary to have uniform pronunciation</p> --}}
-                                            <hr class="my-4">
+                                                <hr class="my-4">
 
-                                            {{-- <div class="row">
+                                                {{-- <div class="row">
                                                         <div class="col-md-6">
                                                             <div>
                                                                 <h5 class="font-size-14">Specification :</h5>
@@ -217,8 +224,9 @@
                                                             </ul>
                                                         </div>
                                                     </div> --}}
+                                            </div>
                                         </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                                 <!-- end row -->
 

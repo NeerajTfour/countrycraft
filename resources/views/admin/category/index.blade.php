@@ -31,12 +31,12 @@
                                         <h2 class="text-primary mb-5">Category Information</h2>
                                     </div>
                                     <div class="col-md-3 w-25">
-                                        {{-- <form action="{{ route('category.search') }}" method="GET">
+                                        <form action="{{ route('category.search') }}" method="GET">
                                             <div class="input-group">
                                                 <input class="form-control" name="search" placeholder="search...">
                                                 <button class="btn btn-sm btn-light">Search</button>
                                             </div>
-                                        </form> --}}
+                                        </form>
                                     </div>
                                     <div class="col-md-1">
                                         <a href="/admin/category/add" class="btn btn-md btn-primary"><i
@@ -47,7 +47,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <table class="table table-striped table-border table-hover">
-                                            <thead class="text-dark bg-success fs-5">
+                                            <thead class="text-light bg-success fs-5">
                                                 <th>S.No.</th>
                                                 <th>Category name</th>
                                                 <th>Parent | Category name</th>
@@ -76,34 +76,39 @@
                                                 @endforeach
                                             </tbody>
                                         </table>
-                                        <div class="row">
-                                            {{-- {{$category->links()}} --}}
+                                        <div class="row mt-3">
+                                            {{ $categories->links() }}
                                         </div>
                                     </div>
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            @endsection
-            @push('footer-script')
-                <script>
-                    $('.category_delete').on('click', function() {
-                        if (confirm('Are you want to delete this category.')) {
-                            var id = $(this).data('id');
-                            $.ajax({
-                                url: '{{ route('category.destroy') }}',
-                                method: 'POST',
-                                data: {
-                                    _token: "{{ csrf_token() }}",
-                                    'id': id
-                                },
-                                success: function(data) {
-                                    location.reload();
-                                }
-                            });
-                        }
-                    });
-                </script>
-            @endpush
+            </div>
+        </div>
+    </div>
+@endsection
+
+@push('footer-script')
+    <script>
+        $('.category_delete').on('click', function() {
+            if (confirm('Are you want to delete this category.')) {
+                var id = $(this).data('id');
+                $.ajax({
+                    url: '{{ route('category.destroy') }}',
+                    method: 'POST',
+                    data: {
+                        _token: "{{ csrf_token() }}",
+                        'id': id
+                    },
+                    success: function(data) {
+                        location.reload();
+                    }
+                });
+            }
+        });
+    </script>
+@endpush

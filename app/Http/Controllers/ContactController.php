@@ -20,7 +20,8 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        $contact = contact::get();
+        return view('admin.contact.index', compact('contact'));
     }
 
     /**
@@ -65,8 +66,11 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(contact $contact)
+    public function destroy(Request $request, contact $contact)
     {
-        //
+        $id = $request->id;
+        $contact = contact::find($id);
+        $contact->delete();
+        return response()->json('success');
     }
 }

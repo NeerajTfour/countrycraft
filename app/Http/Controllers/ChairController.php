@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\chair;
+use App\Models\product;
 use Illuminate\Http\Request;
 
 class ChairController extends Controller
@@ -13,17 +14,28 @@ class ChairController extends Controller
     public function index()
     {
         $chair = chair::get();
-        return view('layouts.chair.index', compact('chair'));
+        $products = product::where('category_id', 4)->get();
+        return view('layouts.chair.index', compact('chair', 'products'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function sofa()
     {
-        //
+        $products = product::where('category_id', 12)->get();
+        return view('layouts.chair.sofa', compact('products'));
     }
-
+    public function sidetable()
+    {
+        $products = product::where('category_id', 10)->get();
+        return view('layouts.chair.sidetable', compact('products'));
+    }
+    public function sideboard()
+    {
+        $products = product::where('category_id', 11)->get();
+        return view('layouts.chair.sideboard', compact('products'));
+    }
     /**
      * Store a newly created resource in storage.
      */

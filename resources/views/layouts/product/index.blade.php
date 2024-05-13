@@ -7,19 +7,22 @@
                 <div class="col-md-2 pt-3 pro ">
                     <h6 class="ps-3">PRODUCT CATEGORIES</h6>
                     <ul class="">
-                        <li><a href="/layouts/bar">Bar Cabinet</a></li>
-                        <li> <a href="">Bed Side</a></li>
-                        <li> <a href="">Bookshelf</a></li>
+                        {{-- @foreach ($categories as $categorie)
+                            <li><a href="{{ $categories->category_id }}">{{ $categories->category->name }}</a></li> --}}
+                        <li> <a href="/layouts/bar">Bar Cabinet</a></li>
+                        <li> <a href="/layouts/dining/bedside">Bed Side</a></li>
+                        <li> <a href="/layouts/bar/bookselves">Bookshelf</a></li>
                         <li> <a href="/layouts/chair">chair</a></li>
-                        <li> <a href="">Coffee Table</a></li>
-                        <li> <a href="">Console Table</a></li>
-                        <li> <a href="">Desk</a></li>
-                        <li> <a href="">Dining Table</a></li>
-                        <li> <a href="">Shelving</a></li>
-                        <li> <a href="">Side Table</a></li>
-                        <li> <a href="">Sideboard</a></li>
-                        <li> <a href="">Sofa</a></li>
-                        <li> <a href="">TV Cabinet</a></li>
+                        <li> <a href="/layouts/dining/coffee">Coffee Table</a></li>
+                        <li> <a href="/layouts/dining/console">Console Table</a></li>
+                        <li> <a href="/layouts/dining/desk">Desk</a></li>
+                        <li> <a href="/layouts/dining">Dining Table</a></li>
+                        <li> <a href="/layouts/bar/shelving">Shelving</a></li>
+                        <li> <a href="/layouts/chair/sidetable">Side Table</a></li>
+                        <li> <a href="/layouts/chair/sideboard">Sideboard</a></li>
+                        <li> <a href="/layouts/chair/sofa">Sofa</a></li>
+                        <li> <a href="/layouts/bar/tv">TV Cabinet</a></li>
+                        {{-- @endforeach --}}
                     </ul>
                 </div>
                 <div class="col-md-10">

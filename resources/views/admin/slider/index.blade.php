@@ -38,7 +38,7 @@
                                         <h2 class="text-primary mb-5">Slider Information</h2>
                                     </div>
                                     <div class="col-md-2">
-                                        {{-- <a href="/admin/slider/sliderTable" class="btn btn-md btn-primary">View</a> --}}
+                                        <a href="{{ route('slider.list') }}" class="btn btn-md btn-primary">View</a>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -105,7 +105,7 @@
                                         <h2 class="text-primary mb-5">B_Slider Information</h2>
                                     </div>
                                     <div class="col-md-2">
-                                        {{-- <a href="/admin/slider/sliderTable" class="btn btn-md btn-primary">View</a> --}}
+                                        <a href="{{ route('b_slider.list') }}" class="btn btn-md btn-primary">View</a>
                                     </div>
                                 </div>
                                 <div class="row">

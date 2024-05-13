@@ -32,7 +32,7 @@
                                         <h2 class="text-primary mb-5">Category Information</h2>
                                     </div>
                                     <div class="col-md-2">
-                                        {{-- <a href="/admin/slider/sliderTable" class="btn btn-md btn-primary">View</a> --}}
+                                        <a href="{{ route('category.view') }}" class="btn btn-md btn-primary">View</a>
                                     </div>
                                 </div>
                                 <div class="row">

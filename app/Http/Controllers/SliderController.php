@@ -13,7 +13,7 @@ class SliderController extends Controller
     public function index()
     {
         $slider = slider::all();
-        return view('admin.slider.index');
+        return view('admin.slider.index', compact('slider'));
     }
 
     /**
@@ -21,7 +21,8 @@ class SliderController extends Controller
      */
     public function create()
     {
-        //
+        $slider = slider::get();
+        return view('admin.slider.stable', compact('slider'));
     }
 
     /**
@@ -64,24 +65,41 @@ class SliderController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(slider $slider)
+    public function edit(slider $slider, $id)
     {
-        //
+        $slider = slider::where('id', $id)->first();
+        return view('admin.slider.edit', compact('slider'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, slider $slider)
+    public function update(Request $request, slider $slider, $id)
     {
-        //
+        $slider = slider::find($id);
+        $image = '';
+
+        if ($request->hasFile('image')) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('slider'), $imageName);
+            $image = '' . $imageName;
+        }
+        $slider->title = $request->title;
+        $slider->para = $request->para;
+        $slider->bname = $request->bname;
+        $slider->image = $image;
+        $slider->save();
+        return redirect()->route('slider.list');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(slider $slider)
+    public function destroy(Request $request, slider $slider)
     {
-        //
+        $id = $request->id;
+        $slider = slider::find($id);
+        $slider->delete();
+        return response()->json('success');
     }
 }

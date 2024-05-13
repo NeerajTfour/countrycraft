@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\category;
+// use App\Models\category;
+use App\Models\Category;
+
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -30,6 +32,25 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+    public function view()
+    {
+        $categories = category::latest()->paginate(10);
+        return view('admin.category.index', compact('categories'));
+    }
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        // Check if a search query exists
+        if ($search) {
+            $categories = category::where('name', 'like', "%$search%")->paginate(5);
+        } else {
+            // If no search query, fetch all records with pagination
+            $categories = category::paginate(10);
+        }
+
+        return view('admin.category.index', compact('categories', 'search'));
+    }
     public function store(Request $request)
     {
         $data = array(
@@ -74,7 +95,7 @@ class CategoryController extends Controller
         // dd($data);
         $category = Category::find($id);
         $category->update($data);
-        return redirect()->route('category.list');
+        return redirect()->route('category.view');
     }
 
     /**

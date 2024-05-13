@@ -3,7 +3,7 @@
     <section class="bg-light">
         <div class="container">
             <div class="row p-3 heading">
-                <h1>F A I R P A R T I C I P A T I O N</h1>
+                <h1>FAIR PARTICIPATION</h1>
                 <div class="col-lg-4 hover01">
                     <figure>
                         <img src="/assets/images/Picture7.jpg" alt="" width="100%" height="320px">

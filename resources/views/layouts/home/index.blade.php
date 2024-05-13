@@ -115,30 +115,30 @@
             {{-- <div class="row heading">
                 <h1>Trending Style</h1>
             </div> --}}
-            <div class="row p-1 m-1">
-                <div class="c-section__hgroup heading ">
-                    <h1>T R E N D I N G <span> </span> S T Y L E</h1>
+            <div class="row p-1 m-1 text-center text-secondary">
+                <div class="c-section__hgroup heading fst-italic ">
+                    <h1>TRENDING STYLE</h1>
                     {{-- <h3 class="c-section__title mt-3">Trending Style</h3> --}}
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-12 hover14 trend px-0" style="background-color: #fcfafa">
-                    <figure>
+                    <figure class="" style="background-color: #fcfafa ">
                         <img id="image" src="/assets/images/download (9).jpg" class="" alt=""
                             width="100%" height="350px">
                     </figure>
-                    <h6 class="mb-2 ps-3">Sofa</h6>
+                    <h6 class="mb-2 ps-3 fs-2 fst-italic bg-light">Chair</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6 hover14 trend2 px-0">
-                    <figure>
+                    <figure style="background-color: #fcfafa">
                         <img id="" src="/assets/images/download (3).jpg" alt="" width="100%"
                             height="350px">
                     </figure>
-                    <h6 class="mb-2 ps-3">Tea Table</h6>
+                    <h6 class="mb-2 ps-3 fs-2 fst-italic bg-white">Table</h6>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-6 hover14 trend px-0">
-                    <figure>
+                    <figure style="background-color: #fcfafa">
                         <img src="/assets/images/download (4).jpg" alt="" width="100%" height="350px">
                     </figure>
-                    <h6 class="mb-2 ps-3">Coffee Table</h6>
+                    <h6 class="mb-2 ps-3 fs-2 fst-italic bg-light   ">Coffee Table</h6>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
                 <div class="col-md-6 col-lg-6">
                     <img src="/assets/images/upholstered-dining-chairs-4.jpg" alt="" width="100%" height="100%">
                 </div>
-                <div class="col-md-6 col-lg-6 pt-3">
+                <div class="col-md-6 col-lg-6 pt-3 fst-italic ">
                     <h4 class="text-muted">Online furniture: where each piece tells its story </h4>
                     <p class="text-muted lh-lg">
                         At CCE, we believe that your home is the canvas of your own story. All of our online furniture
@@ -183,7 +183,7 @@
     <section>
         <div class="container">
             <div class="row justify-content-center mt-5 mb-3 tab">
-                <p class="text-center fs-4">The most demanding products in furniture and decoration</p>
+                {{-- <p class="text-center fs-4">The most demanding products in furniture and decoration</p> --}}
                 <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="" class="o-btn o-btn--secondary u-spacing">Bookshelve</a>
                 </div>

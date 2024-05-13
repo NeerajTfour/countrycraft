@@ -12,12 +12,18 @@ class NewsletterController extends Controller
      */
     public function index()
     {
-        //
+        $newsletter = newsletter::all();
+        return view('admin.newsletter.index', compact('newsletter'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
+    public function view()
+    {
+        $newsletter = newsletter::latest()->paginate(5);
+        return view('admin.newsletter.index', compact('newsletter'));
+    }
     public function create()
     {
         //
@@ -62,8 +68,11 @@ class NewsletterController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(newsletter $newsletter)
+    public function destroy(Request $request, newsletter $newsletter)
     {
-        //
+        $id = $request->id;
+        $newsletter = newsletter::find($id);
+        $newsletter->delete();
+        return response()->json('success');
     }
 }
