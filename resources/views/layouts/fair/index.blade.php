@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row p-3 heading">
                 <h1>FAIR PARTICIPATION</h1>
-                <div class="col-lg-4 hover01">
+                <div class="col-lg-8 hover01">
                     <figure>
-                        <img src="/assets/images/Picture7.jpg" alt="" width="100%" height="320px">
+                        <img src="/assets/images/Picture7.jpg" alt="" width="100%" height="380px">
                     </figure>
                 </div>
                 <div class="col-lg-4 text-muted fst-italic">
@@ -18,18 +18,6 @@
                         and functional level.
                     </p>
                 </div>
-                <div class="col-lg-4 hover01">
-                    <figure>
-                        <img src="/assets/images/Picture8.jpg" alt="" width="100%" height="320px">
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 hover01">
-                    <figure>
-                        <img src="/assets/images/Picture9.jpg" alt="" width="100%" height="320px">
-                    </figure>
-                </div>
                 <div class="col-lg-4 text-muted fst-italic">
                     <p class="lh-lg fw-bold"> The furniture fair at Expo Mart, Noida was a platform for us to
                         unveil new products & collections. By implementing the
@@ -40,9 +28,22 @@
                         motivated and functional.
                     </p>
                 </div>
-                <div class="col-lg-4 hover01">
+                <div class="col-lg-8 hover01">
                     <figure>
-                        <img src="/assets/images/Picture10.jpg" alt="" width="100%" height="320px">
+                        <img src="/assets/images/Picture8.jpg" alt="" width="100%" height="380px">
+                    </figure>
+                </div>
+                {{-- </div>
+            <div class="row"> --}}
+                <div class="col-lg-6 hover01">
+                    <figure>
+                        <img src="/assets/images/Picture9.jpg" alt="" width="100%" height="380px">
+                    </figure>
+                </div>
+
+                <div class="col-lg-6 hover01">
+                    <figure>
+                        <img src="/assets/images/Picture10.jpg" alt="" width="100%" height="380px">
                     </figure>
                 </div>
             </div>

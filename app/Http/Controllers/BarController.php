@@ -14,7 +14,7 @@ class BarController extends Controller
     public function index()
     {
         $bar = bar::get();
-        $products = product::where('category_id', 1)->get();
+        $products = product::where('category_id', 1)->latest()->get();
         return view('layouts.bar.index', compact('bar', 'products'));
     }
 
@@ -23,17 +23,17 @@ class BarController extends Controller
      */
     public function tv()
     {
-        $products = product::where('category_id', 13)->get();
+        $products = product::where('category_id', 13)->latest()->get();
         return view('layouts.bar.tv', compact('products'));
     }
     public function bookselves()
     {
-        $products = product::where('category_id', 3)->get();
+        $products = product::where('category_id', 3)->latest()->get();
         return view('layouts.bar.bookselves', compact('products'));
     }
     public function shelving()
     {
-        $products = product::where('category_id', 9)->get();
+        $products = product::where('category_id', 9)->latest()->get();
         return view('layouts.bar.shelving', compact('products'));
     }
 

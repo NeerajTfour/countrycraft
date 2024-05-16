@@ -39,7 +39,7 @@
                                         </form>
                                     </div>
                                     <div class="col-md-1">
-                                        <a href="/admin/product/add" class="btn btn-md btn-primary"><i
+                                        <a href="{{ route('product.create') }}" class="btn btn-md btn-primary"><i
                                                 class="fa fa-add fs-4"></i></a>
                                     </div>
                                 </div>

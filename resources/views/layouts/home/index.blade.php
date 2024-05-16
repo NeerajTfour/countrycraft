@@ -85,7 +85,7 @@
                     <div class="carousel-inner">
                         @foreach ($sliders as $key => $slider)
                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                <img src="/slider/{{ $slider->image }}" class="d-block w-100"
+                                <img src="/slider/{{ $slider->image }}" style="" class="d-block w-100"
                                     alt="Slide {{ $key + 1 }}" width="100%" height="531px">
                                 <div class="carousel-caption text-start">
                                     <h1>{{ $slider->title }}</h1>
@@ -120,23 +120,24 @@
                     <h1>TRENDING STYLE</h1>
                     {{-- <h3 class="c-section__title mt-3">Trending Style</h3> --}}
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 hover14 trend px-0" style="background-color: #fcfafa">
+                <div class="col-md-4 col-lg-4 col-sm-12 hover14  " style="background-color: #fcfafa">
                     <figure class="" style="background-color: #fcfafa ">
-                        <img id="image" src="/assets/images/download (9).jpg" class="" alt=""
-                            width="100%" height="350px">
+                        <img id="image" src="/assets/images/luxurious-brown-leather-chair-520479-a.png" class=""
+                            alt="" width="100%" height="350px">
                     </figure>
                     <h6 class="mb-2 ps-3 fs-2 fst-italic bg-light">Chair</h6>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 hover14 trend2 px-0">
+                <div class="col-md-4 col-lg-4 col-sm-6 hover14  ">
                     <figure style="background-color: #fcfafa">
-                        <img id="" src="/assets/images/download (3).jpg" alt="" width="100%"
-                            height="350px">
+                        <img id="" src="/assets/images/heirloom-wooden-dining-table-837546-b.png" alt=""
+                            width="100%" height="350px">
                     </figure>
                     <h6 class="mb-2 ps-3 fs-2 fst-italic bg-white">Table</h6>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 hover14 trend px-0">
-                    <figure style="background-color: #fcfafa">
-                        <img src="/assets/images/download (4).jpg" alt="" width="100%" height="350px">
+                <div class="col-md-4 col-lg-4 col-sm-6 hover14  ">
+                    <figure style="background-color: #fcfafa;">
+                        <img src="/assets/images/geometric-bone-inlay-cofee-table-617324-a.png" alt=""
+                            width="100%" height="350px">
                     </figure>
                     <h6 class="mb-2 ps-3 fs-2 fst-italic bg-light   ">Coffee Table</h6>
                 </div>
@@ -146,11 +147,11 @@
     <section class="" style="background-color: #fcfafa">
         <div class="container-fluid">
             <div class="row heading">
-                <h1>A B O U T F U R N I T U R E</h1>
+                <h1>ABOUT FURNITURE</h1>
             </div>
             <div class="row ms-2 me-2 mb-3">
                 <div class="col-md-6 col-lg-6">
-                    <img src="/assets/images/upholstered-dining-chairs-4.jpg" alt="" width="100%" height="100%">
+                    <img src="/assets/images/Picture2.jpeg" alt="" width="100%" height="100%">
                 </div>
                 <div class="col-md-6 col-lg-6 pt-3 fst-italic ">
                     <h4 class="text-muted">Online furniture: where each piece tells its story </h4>
@@ -185,28 +186,28 @@
             <div class="row justify-content-center mt-5 mb-3 tab">
                 {{-- <p class="text-center fs-4">The most demanding products in furniture and decoration</p> --}}
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Bookshelve</a>
+                    <a href="/layouts/bar/bookselves" class="o-btn o-btn--secondary u-spacing">Bookshelve</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Bar Cabinet</a>
+                    <a href="/layouts/bar" class="o-btn o-btn--secondary u-spacing">Bar Cabinet</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
                     <a href="/layouts/chair" class="o-btn o-btn--secondary u-spacing">Chair</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Coffee Table</a>
+                    <a href="/layouts/dining/coffee" class="o-btn o-btn--secondary u-spacing">Coffee Table</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Console Table</a>
+                    <a href="/layouts/dining/console" class="o-btn o-btn--secondary u-spacing">Console Table</a>
                 </div>
                 <div class="col-md-2 col-lg-2 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Shelving</a>
+                    <a href="/layouts/bar/shelving" class="o-btn o-btn--secondary u-spacing">Shelving</a>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">Dining Table</a>
+                    <a href="/layouts/dining" class="o-btn o-btn--secondary u-spacing">Dining Table</a>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-6">
-                    <a href="" class="o-btn o-btn--secondary u-spacing">TV Cabinet</a>
+                    <a href="/layouts/bar/tv" class="o-btn o-btn--secondary u-spacing">TV Cabinet</a>
                 </div>
             </div>
         </div>
@@ -233,11 +234,8 @@
                 </div>
                 <div class="col-md-4">
                     <h3 class="text-center mt-3 text-info">Why Choose Us?</h3>
-                    <p class="text-muted lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe repellat
-                        optio maxime, nisi minus
-                        dicta asperiores sapiente harum eaque illo dignissimos molestiae! Nobis, praesentium quis tenetur
-                        iure eaque ullam omnis.
-                    </p>
+                    <p class="text-muted lh-lg">We are always bide to our promises by delivering the desired results with
+                        utmost precision and within the specified timeframe.
                     <div class="text-center more">
                         <a href="/layouts/contact" class="btn btn-md btn-dark mb-3 rounded-pill">More Details</a>
                     </div>

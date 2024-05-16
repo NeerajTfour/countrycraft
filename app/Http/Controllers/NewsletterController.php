@@ -24,6 +24,21 @@ class NewsletterController extends Controller
         $newsletter = newsletter::latest()->paginate(5);
         return view('admin.newsletter.index', compact('newsletter'));
     }
+
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        // Check if a search query exists
+        if ($search) {
+            $newsletter = newsletter::where('name', 'like', "%$search%")->paginate(5);
+        } else {
+            // If no search query, fetch all records with pagination
+            $newsletter = newsletter::paginate(10);
+        }
+
+        return view('admin.newsletter.index', compact('newsletter', 'search'));
+    }
     public function create()
     {
         //

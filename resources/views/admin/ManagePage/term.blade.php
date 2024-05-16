@@ -4,7 +4,7 @@
         <div class="row" style="margin-top:85px;margin-left:115px">
             <div class="col-md-12">
                 <div class="card p-3 mb-5">
-                    <form action="{{ url('/admin/ManagePage/term/edit') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('term.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('POST')
                         @isset($terms)

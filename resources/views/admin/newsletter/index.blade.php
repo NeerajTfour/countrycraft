@@ -31,17 +31,17 @@
                                         <h2 class="text-primary mb-5">NewsLetters Information</h2>
                                     </div>
                                     <div class="col-md-3 w-25">
-                                        {{-- <form action="{{ route('category.search') }}" method="GET">
+                                        <form action="{{ route('newsletter.search') }}" method="GET">
                                             <div class="input-group">
                                                 <input class="form-control" name="search" placeholder="search...">
                                                 <button class="btn btn-sm btn-light">Search</button>
                                             </div>
-                                        </form> --}}
+                                        </form>
                                     </div>
-                                    <div class="col-md-1">
+                                    {{-- <div class="col-md-1">
                                         <a href="/admin/slider/bslider" class="btn btn-md btn-primary"><i
                                                 class="fa fa-add fs-4"></i></a>
-                                    </div>
+                                    </div> --}}
                                 </div>
 
                                 <div class="row">

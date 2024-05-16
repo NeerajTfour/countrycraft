@@ -14,4 +14,8 @@ class product extends Model
     {
         return $this->belongsTo(category::class);
     }
+    public function prodetail()
+    {
+        return $this->hasOne(Product::class);
+    }
 }

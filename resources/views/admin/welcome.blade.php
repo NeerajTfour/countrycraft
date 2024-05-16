@@ -10,16 +10,12 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="/assets/images/chair-black.png" />
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.0.0-alpha.12/lib.min.js"> --}}
-    {{-- calendar Css --}}
-    <!-- Plugin css -->
-    {{-- <link rel="stylesheet" href="/assets/libs/@fullcalendar/core/main.min.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css" /> --}}
+
 
     <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -28,6 +24,8 @@
             display: none;
         }
     </style>
+    {{-- <link href="/assets/css/style.css" rel="stylesheet" type="text/css" /> --}}
+
     <!-- Icons Css -->
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -71,21 +69,18 @@
                                     width="111" />
                             </span>
                         </a>
-
                     </div>
-
                     <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
                         id="vertical-menu-btn">
                         <i class="ri-menu-2-line align-middle"></i>
                     </button>
-
                     <!-- App Search-->
-                    <form class="app-search d-none d-lg-block">
+                    {{-- <form class="app-search d-none d-lg-block">
                         <div class="position-relative">
                             <input type="text" class="form-control" placeholder="Search..." />
                             <span class="ri-search-line"></span>
                         </div>
-                    </form>
+                    </form> --}}
                 </div>
 
                 <div class="d-flex">
@@ -114,36 +109,27 @@
                     <div class="dropdown d-inline-block user-dropdown">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{-- @isset($profile)
-                                <img class="rounded-circle header-profile-user" src="/assets/images/images.jpg"
-                                    alt="Header Avatar" width="50px" height="50px" />
-                            @endisset --}}
+
                             <img class="rounded-circle header-profile-user" src="/assets/images/images.jpg"
                                 alt="Header Avatar" width="50px" height="50px" />
                             <span class="d-none d-xl-inline-block ms-1">CountryCraft</span>
-                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            {{-- <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i> --}}
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="/admin/account_setting/profile"><i
+                            {{-- <a class="dropdown-item" href=""><i
                                     class="ri-user-line align-middle me-1"></i>
-                                Profile</a>
-                            <div class="dropdown-divider"></div>
+                                Profile</a> --}}
+                            {{-- <div class="dropdown-divider"></div> --}}
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         </div>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                            <i class="ri-settings-2-line"></i>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -155,105 +141,44 @@
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
-                    <ul class="metismenu list-unstyled" id="side-menu">
+                    <ul class="metismenu list-unstyled text-white" id="side-menu">
                         <li class="menu-title">Menu</li>
 
                         <li>
                             <a href="/admin/dashboard" class="waves-effect">
-                                <i class="ri-dashboard-line"></i><span
+                                <i class="fa fa-bars"></i><span
                                     class="badge rounded-pill bg-success float-end"></span>
                                 <span>Dashboard</span>
                             </a>
                         </li>
 
-                        {{--
-                            <li>
-                                <a href="/admin/calendar" class="waves-effect">
-                                    <i class="ri-calendar-2-line"></i>
-                                    <span>Calendar</span>
-                                </a>
-                            </li>
-                            --}}
-
-                        {{-- <li>
-                            <a href="javascript: void(0);" class=" has-arrow waves-effect">
-                                <i class="mdi mdi-head-cog-outline"></i>
-                                <span>Audience</span>
-                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li>
-                                    <a href="/admin/audience/audience">Add Audience</a>
-                                </li>
-                                <li>
-                                    <a href="/admin/audience/audiTable">View Audience</a>
-                                </li>
-                            </ul>
-
-                        </li> --}}
-
-                        {{--
-                            <li>
-                                <a
-                                    href="/admin/audience/audience"
-                                    class="waves-effect"
-                                >
-                                    <i class="ri-dashboard"></i>
-                                    <span>Audience</span>
-                                </a>
-                            </li>
-                            --}}
-                        {{-- <li>
-                            <a href="javascript:void(0);" class="has-arrow waves-effect">
-                                <i class="ri ri-store-3-line"></i>
-                                <span>Inquiry</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li>
-                                    <a href="/admin/inquiry/inquiry">Add Inquiry</a>
-                                </li>
-                                <li>
-                                    <a href="/admin/inquiry/inqTable">View Inquiry</a>
-                                </li>
-                            </ul>
-                        </li> --}}
-
-                        {{--
-                            <li>
-                                <a
-                                    href="/admin/inquiry/inquiry"
-                                    class="waves-effect"
-                                >
-                                    <i class="ri-dashboard"></i>
-                                    <span>Inquiry</span>
-                                </a>
-                            </li>
-                            --}}
                         <li>
                             <a href="" class="has-arrow waves-effect">
-                                <i class="ri-store-2-line"></i>
+                                <i class="fa fa-sliders"></i>
                                 <span>Slider</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
                                     <a href="/admin/slider">Add Slider</a>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a href="/admin/slider/sliderTable">View Slider</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
-                        <li><a href="/admin/newsletter">Newsletter</a></li>
+                        <li><a href="/admin/newsletter"><i class="fa fa-envelope"></i>
+                                <span>Newsletter</span></a></li>
                         <li>
-                        <li><a href="{{ route('contact.list') }}">Contact</a></li>
+                        <li><a href="{{ route('contact.list') }}"><i class="fa fa-phone"></i>
+                                <span>Contact </span></a></li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="ri-chat-1-line"></i>
+                                <i class="fa fa-list"></i>
                                 <span>Pages </span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
-                                    <a href="/admin/manage_page/about">About Us</a>
+                                    <a href="/admin/ManagePage/about">About Us</a>
                                 </li>
                                 <li>
                                     <a href="/admin/ManagePage/privacy">Privacy policy</a>
@@ -262,13 +187,13 @@
                                     <a href="/admin/ManagePage/term">Terms and condition</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/manage_page/return_policy">Return policy</a>
+                                    <a href="/admin/ManagePage/return">Return policy</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="ri-store-2-line"></i>
+                                <i class="fa fa-ranking-star"></i>
                                 <span>Category</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
@@ -282,7 +207,7 @@
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="ri-artboard-2-line"></i>
+                                <i class="fa fa-bag-shopping"></i>
                                 <span>Product</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">

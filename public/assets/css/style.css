@@ -1084,13 +1084,13 @@ p {
     display: none !important;
 } */
 .authentication-bg {
-    background-image: url("../images/Picture1.jpg");
+    background-image: url("../assets/images/Picture25.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 .authentication-bg .bg-overlay {
-    background-color: #292626;
+    background-color: #d62323;
 }
 @media (max-width: 991px) {
     .authentication-bg {

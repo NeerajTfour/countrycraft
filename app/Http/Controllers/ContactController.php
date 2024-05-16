@@ -23,7 +23,25 @@ class ContactController extends Controller
         $contact = contact::get();
         return view('admin.contact.index', compact('contact'));
     }
+    public function view()
+    {
+        $contact = contact::latest()->paginate(10);
+        return view('admin.contact.index', compact('contact'));
+    }
+    public function search(Request $request)
+    {
+        $search = $request->search;
 
+        // Check if a search query exists
+        if ($search) {
+            $contact = contact::where('name', 'like', "%$search%")->paginate(5);
+        } else {
+            // If no search query, fetch all records with pagination
+            $contact = contact::paginate(10);
+        }
+
+        return view('admin.contact.index', compact('contact', 'search'));
+    }
     /**
      * Store a newly created resource in storage.
      */

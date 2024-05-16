@@ -48,10 +48,6 @@ Route::controller(DiningController::class)->group(function () {
     Route::get('/layouts/dining/console', 'console');
     Route::get('/layouts/dining/bedside', 'bedside');
     Route::get('/layouts/dining/desk', 'desk');
-
-
-
-
 });
 // Route::get('/about', function () {
 //     return view('layouts.about.index');
@@ -63,8 +59,14 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('/auth.login', function () {
-        return view('admin.welcome');
+    Route::get('/', function () {
+        return view('auth.login');
+    });
+    Route::get('/login', function () {
+        return view('auth.logout');
+    });
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
     });
     Route::controller(SliderController::class)->group(function () {
         Route::group(['prefix' => 'slider'], function () {
@@ -86,24 +88,23 @@ Route::group(['prefix' => 'admin'], function () {
             Route::get('/edit{id}', 'edit')->name('b_slider.edit');
             Route::post('/edit{id}', 'update')->name('b_slider.update');
             Route::post('/delete', 'destroy')->name('b_slider.destroy');
-
         });
     });
     Route::controller(NewsletterController::class)->group(function () {
         Route::group(['prefix' => 'newsletter'], function () {
             Route::get('/', 'index');
             Route::get('/', 'view')->name('newsletter.view');
-            Route::post('/store', 'store')->name('newsletter.store');
+            Route::post('/search', 'search')->name('newsletter.search');
             Route::get('/create', 'create')->name('newsletter.list');
             Route::post('/delete', 'destroy')->name('newsletter.destroy');
-
         });
     });
     Route::controller(ContactController::class)->group(function () {
         Route::group(['prefix' => 'contact'], function () {
             // Route::get('/', 'index')->name('contact.list');
             // Route::get('/', 'view')->name('contact.view');
-            Route::post('/store', 'store')->name('contact.store');
+            Route::get('/', 'view')->name('contact.view');
+            Route::get('/search', 'search')->name('contact.search');
             Route::get('/create', 'create')->name('contact.list');
             Route::post('/delete', 'destroy')->name('contact.destroy');
         });
@@ -133,21 +134,21 @@ Route::group(['prefix' => 'admin'], function () {
         });
     });
 });
-
-Route::get('/layouts/product/prodetail/{id}', function () {
-    return view('layouts.product.prodetail');
-});
+// Route::get('/layouts/product/prodetail/{id}', function () {
+//     return view('layouts.product.prodetail');
+// });
 Route::controller(AboutController::class)->group(function () {
     Route::get('/layouts/about', 'index');
+    Route::get('/admin/ManagePage/about', 'create')->name('about.create');
+    Route::post('/admin/ManagePage/about', 'store')->name('about.store');
+    Route::post('/admin/ManagePage/about', 'edit')->name('about.edit');
 });
 Route::controller(BarController::class)->group(function () {
     Route::get('/layouts/bar', 'index');
     Route::get('/layouts/bar/bookselves', 'bookselves');
     Route::get('/layouts/bar/shelving', 'shelving');
     Route::get('/layouts/bar/tv', 'tv');
-
 });
-
 Route::controller(ContactController::class)->group(function () {
     Route::group(['prefix' => 'layouts/contact'], function () {
         Route::get('/', 'index');
@@ -162,6 +163,9 @@ Route::controller(FairController::class)->group(function () {
 Route::controller(ShippingController::class)->group(function () {
     Route::get('/layouts/shipping', 'index');
 });
+Route::controller(ProductController::class)->group(function () {
+    Route::get('/layouts/product/prodetail/{id}', 'show')->name('product.show');
+});
 Route::controller(NewsletterController::class)->group(function () {
     Route::post('/layouts/newsletter/store', 'store')->name('newsletter.store');
 });
@@ -169,14 +173,15 @@ Route::controller(TermsController::class)->group(function () {
     Route::group(['prefix' => 'layouts/terms'], function () {
         Route::get('/', 'index');
     });
-    Route::get('/admin/ManagePage/term', 'create');
-    Route::post('/admin/ManagePage/term', 'store')->name('term.store');
-    Route::post('/admin/ManagePage/term', 'edit')->name('term.edit');
-
+    Route::get('/admin/ManagePage/term', 'create')->name('term.create');
+    Route::post('/admin/ManagePage/term/store', 'store')->name('term.store');
+    // Route::post('/admin/ManagePage/term/edit', 'edit')->name('term.edit');
 });
 Route::controller(PrivacyController::class)->group(function () {
     Route::get('/layouts/privacy', 'index');
     Route::get('/admin/ManagePage/privacy', 'create');
-
+    Route::post('/admin/ManagePage/privacy/store', 'store')->name('privacy.store');
+    Route::post('/admin/ManagePage/privacy/edit', 'edit')->name('privacy.edit');
+    Route::get('/admin/ManagePage/return', 'returncreate');
 });
 

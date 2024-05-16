@@ -54,7 +54,8 @@
                                                     <h5>Category</h5>
                                                 </div>
                                                 <div class="col-md-2 form-group">
-                                                    <a href="/admin/product" class="btn btn-md btn-primary">View</a>
+                                                    <a href="{{ route('product.view') }}"
+                                                        class="btn btn-md btn-primary">View</a>
                                                 </div>
                                                 <div class="col-md-4 mb-3 mt-3 form-group">
                                                     <label for="">Category Name</label>

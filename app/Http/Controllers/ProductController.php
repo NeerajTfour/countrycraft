@@ -27,7 +27,7 @@ class ProductController extends Controller
     }
     public function view()
     {
-        $products = product::latest()->paginate(5);
+        $products = product::latest()->paginate(10);
         return view('admin.product.index', compact('products'));
     }
     public function search(Request $request)
@@ -80,7 +80,7 @@ class ProductController extends Controller
         $product->height = $request->height;
         $product->finish = $request->finish;
         $product->image_1 = $image;
-        $product->image_2 = $image_2;
+        $product->image_2 = $image;
         $product->image_3 = $image;
         $product->image_4 = $image;
         // dd($product);
@@ -200,5 +200,9 @@ class ProductController extends Controller
     }
     public function prodetail(Request $request, product $product)
     {
+        $id = $request->id;
+        $products = product::with('product')->first();
+        // dd($products);
+        return view('layouts.product.prodetail', compact('products'));
     }
 }

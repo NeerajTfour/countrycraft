@@ -23,13 +23,19 @@ class PrivacyController extends Controller
     {
         return view('admin.ManagePage.privacy');
     }
-
+    public function returncreate()
+    {
+        return view('admin.ManagePage.return');
+    }
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        $privacy = new privacy;
+        $privacy->text = $request->text;
+        $privacy->save();
+        return back();
     }
 
     /**
@@ -43,9 +49,16 @@ class PrivacyController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(privacy $privacy)
+    public function edit(Request $request, privacy $privacy)
     {
-        //
+        $privacy = privacy::find($request->privacy_id);
+        if ($privacy) {
+            $privacy->text = $request->text;
+            $privacy->save();
+            return redirect('/admin/ManagePage/privacy');
+        } else {
+            return redirect('/admin/ManagePage/privacy');
+        }
     }
 
     /**

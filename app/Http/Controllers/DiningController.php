@@ -14,7 +14,7 @@ class DiningController extends Controller
     public function index()
     {
         $dining = dining::get();
-        $products = product::where('category_id', 8)->get();
+        $products = product::where('category_id', 8)->latest()->get();
         return view('layouts.dining.index', compact('dining', 'products'));
     }
 
@@ -23,22 +23,22 @@ class DiningController extends Controller
      */
     public function coffee()
     {
-        $products = product::where('category_id', 5)->get();
+        $products = product::where('category_id', 5)->latest()->get();
         return view('layouts.dining.coffee', compact('products'));
     }
     public function console()
     {
-        $products = product::where('category_id', 6)->get();
+        $products = product::where('category_id', 6)->latest()->get();
         return view('layouts.dining.console', compact('products'));
     }
     public function bedside()
     {
-        $products = product::where('category_id', 2)->get();
+        $products = product::where('category_id', 2)->latest()->get();
         return view('layouts.dining.bedside', compact('products'));
     }
     public function desk()
     {
-        $products = product::where('category_id', 7)->get();
+        $products = product::where('category_id', 7)->latest()->get();
         return view('layouts.dining.desk', compact('products'));
     }
     /**

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CountryCraft</title>
+    <link rel="shortcut icon" href="/assets/images/chair-black.png" />
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -45,8 +46,9 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="/layouts/bar">Bar Cabinet</a></li>
-                                    <li><a class="dropdown-item" href="#">Bed</a></li>
                                     <li><a class="dropdown-item" href="/layouts/chair">Chair</a></li>
+                                    <li><a class="dropdown-item" href="/layouts/chair/sideboard">sideboard</a></li>
+
                                 </ul>
                             </li>
                             {{-- <li class="dropdown">
@@ -93,7 +95,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
 
-                        <div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
+                        <div class="col-lg-4 col-md-6 col-sm-6 mx-auto">
                             <div class="footer-info ms-3 ps-2">
                                 <img src="/assets/images/logo-white.png" width="130px" class="ps-3 pt-3"
                                     style="margin-top: -25px; margin-left:-34px;" alt="company logo">
@@ -110,7 +112,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-6 mx-auto footer-links">
+                        {{-- <div class="col-lg-2 col-md-6 col-sm-6 mx-auto footer-links">
                             <h4>Shop</h4>
                             <ul>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/">Furniture</a></li>
@@ -121,7 +123,7 @@
                                 <li><i class="fa fa-chevron-right"></i> <a href="">Virtual
                                         Catalogues</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
 
                         <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                             <h4>Service</h4>
@@ -133,7 +135,7 @@
                                         Locator</a></li>
                                 <li><i class="fa fa-chevron-right"></i> <a href="/layouts/fair">Fairs &amp; Events</a>
                                 </li>
-                                <li><i class="fa fa-chevron-right"></i> <a href="/career">Careers</a></li>
+                                {{-- <li><i class="fa fa-chevron-right"></i> <a href="/career">Careers</a></li> --}}
                             </ul>
                         </div>
 
@@ -149,7 +151,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 footer-newsletter">
+                        <div class="col-lg-4 col-md-6 col-sm-6 footer-newsletter">
                             {{-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
                             <h4 class="footer-newsletter">Our Newsletter</h4>
                             <form action="{{ route('newsletter.store') }}" method="POST">
@@ -177,11 +179,11 @@
                     </div>
 
                     <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        {{-- <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> --}}
                         <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/countrycraft_/" target="blank" class="instagram"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="#" target="" class="google-plus"><i class="fab fa-skype"></i></a>
+                        {{-- <a href="#" target="" class="google-plus"><i class="fab fa-skype"></i></a> --}}
                         <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
                     </div>
 

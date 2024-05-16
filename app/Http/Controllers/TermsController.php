@@ -21,6 +21,7 @@ class TermsController extends Controller
      */
     public function create()
     {
+        $terms = terms::first();
         return view('admin.ManagePage.term');
     }
 
@@ -29,11 +30,12 @@ class TermsController extends Controller
      */
     public function store(Request $request)
     {
-        $terms = new terms;
-        $terms->text = $request->text;
-
-        $terms->save();
-        return back();
+        $id = $request->id;
+        $data = array(
+            'text' => $request->text
+        );
+        $terms = terms::updateOrCreate($data);
+        return redirect()->route('term.create');
     }
 
     /**

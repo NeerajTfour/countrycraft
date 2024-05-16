@@ -22,7 +22,8 @@
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12 hover01">
                     <figure>
-                        <img src="/assets/images/Picture2.jpeg" alt="" width="100%" height="270px">
+                        <img src="/assets/images/Picture2.jpeg" alt="" class="img-thumbnail" width="100%"
+                            height="270px">
                     </figure>
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 text-muted lh-lg">
@@ -145,27 +146,38 @@
             <div class="row ms-2 me-2 mb-3 heading text-muted">
                 <h1>T I M B E R &nbsp; M A N A G E M E N T</h1>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
-                    <p class="pt-3 fst-italic">Timber management is a dynamic and
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>Timber management is a dynamic and
+                                interdisciplinary field that requires a
+                                holistic approach to balance economic,
+                                ecological, and social considerations.</p>
+                        </blockquote>
+                    </figure>
+                    {{-- <p class="pt-3 fst-italic">Timber management is a dynamic and
                         interdisciplinary field that requires a
                         holistic approach to balance economic,
                         ecological, and social considerations.
-                    </p>
+                    </p> --}}
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2 hover01">
                     <figure>
-                        <img src="/assets/images/Picture17.jpg" alt="" width="100%" height="250px">
+                        <img src="/assets/images/Picture17.jpg" alt="" class="img-thumbnail" width="100%"
+                            height="250px">
                     </figure>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2 hover01">
                     <figure>
-                        <img src="/assets/images/Picture18.jpg" alt="" width="100%" height="250px">
+                        <img src="/assets/images/Picture18.jpg" alt="" class="img-thumbnail" width="100%"
+                            height="250px">
                     </figure>
                 </div>
             </div>
             <div class="row ms-2 me-2 mb-3 text-muted hover01">
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                     <figure>
-                        <img src="/assets/images/Picture20.jpg" alt="" width="100%" height="250px">
+                        <img src="/assets/images/Picture20.jpg" class="img-thumbnail" alt="" width="100%"
+                            height="250px">
                     </figure>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
@@ -175,28 +187,37 @@
                         reaching the end consumer, each step plays a crucial role in creating
                         high-quality and aesthetically pleasing furniture.
                     </p>
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                     <figure>
-                        <img src="/assets/images/Picture21.jpg" alt="" width="100%" height="250px">
+                        <img src="/assets/images/Picture21.jpg" class="img-thumbnail" alt="" width="100%"
+                            height="250px">
                     </figure>
                 </div>
             </div>
             <div class="row ms-2 mb-3 hover01">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
-                    <figure>
-                        <img src="/assets/images/Picture3.jpg" alt="" width="100%" height="350px">
-                    </figure>
-                </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
                     <figure>
-                        <img src="/assets/images/Picture25.jpg" alt="" width="100%" height="350px">
+                        <img src="/assets/images/Picture25.jpg" alt="" width="100%" height="380px">
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <figure>
+                        <img src="/assets/images/Picture3.jpg" alt="" width="100%" height="380px">
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
                     <figure>
                         <img src="/assets/images/WhatsApp Image 2022-03-29 at 2.20.03 PM (3) (1).jpg" alt=""
-                            width="100%" height="350px">
+                            width="100%" height="380px">
                     </figure>
                 </div>
             </div>

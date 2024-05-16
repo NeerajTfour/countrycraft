@@ -14,7 +14,7 @@ class ChairController extends Controller
     public function index()
     {
         $chair = chair::get();
-        $products = product::where('category_id', 4)->get();
+        $products = product::where('category_id', 4)->latest()->get();
         return view('layouts.chair.index', compact('chair', 'products'));
     }
 
@@ -23,17 +23,17 @@ class ChairController extends Controller
      */
     public function sofa()
     {
-        $products = product::where('category_id', 12)->get();
+        $products = product::where('category_id', 12)->latest()->get();
         return view('layouts.chair.sofa', compact('products'));
     }
     public function sidetable()
     {
-        $products = product::where('category_id', 10)->get();
+        $products = product::where('category_id', 10)->latest()->get();
         return view('layouts.chair.sidetable', compact('products'));
     }
     public function sideboard()
     {
-        $products = product::where('category_id', 11)->get();
+        $products = product::where('category_id', 11)->latest()->get();
         return view('layouts.chair.sideboard', compact('products'));
     }
     /**

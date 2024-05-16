@@ -75,7 +75,7 @@
                                             </tbody>
                                         </table>
                                         <div class="row">
-                                            {{ $bslider->links() }}
+                                            {{-- {{ $bslider->links() }} --}}
                                         </div>
                                     </div>
                                 </div>

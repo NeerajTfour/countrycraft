@@ -82,7 +82,7 @@
                                         <div class="text-center">
                                             <div>
                                                 <a href="index.html" class="authentication-logo">
-                                                    <img src="/assets/images/logo.jpeg" alt="" height="75"
+                                                    <img src="/assets/images/logo-black.png" alt="" height="65"
                                                         class="auth-logo logo-dark mx-auto " />
                                                     {{-- <img
                                                             src="/assets/images/logo.jpeg"
@@ -140,7 +140,6 @@
                                                                 @enderror
                                                             </div>
                                                         </div>
-
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="checkbox" name="remember"
                                                                 id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -148,7 +147,6 @@
                                                                 for="customControlInline">Remember
                                                                 me</label>
                                                         </div>
-
                                                         <div class="mt-2 text-center">
                                                             <button type="submit" class="btn btn-primary">
                                                                 {{ __('Login') }}
@@ -159,9 +157,7 @@
                                                             @if (Route::has('password.request'))
                                                                 <a class="btn btn-link"
                                                                     href="{{ route('password.request') }}">
-                                                                    {{ __('Forgot
-                                                                                                                                                                                                                                                                                Your
-                                                                                                                                                                                                                                                                                Password?') }}
+                                                                    {{ __('Forgot Your Password?') }}
                                                                 </a>
                                                             @endif
                                                         </div>
@@ -194,7 +190,9 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="authentication-bg">
-                        <div class="bg-overlay"></div>
+                        <div class="bg-overlay">
+                            <img src="/assets/images/picture25.jpg" alt="" width="100%" height="550px">
+                        </div>
                     </div>
                 </div>
             </div>
