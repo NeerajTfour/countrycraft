@@ -11,6 +11,7 @@ use App\Http\Controllers\FairController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReturnPolicyController;
 use App\Http\Controllers\ShippingController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TermsController;
@@ -58,13 +59,14 @@ Route::controller(DiningController::class)->group(function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/auth/login', function () {
+    return view('auth.login');
+});
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('/', function () {
-        return view('auth.login');
-    });
-    Route::get('/login', function () {
-        return view('auth.logout');
-    });
+
+    // Route::get('/login', function () {
+    //     return view('auth.logout');
+    // });
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     });
@@ -134,14 +136,16 @@ Route::group(['prefix' => 'admin'], function () {
         });
     });
 });
+Route::get('/layouts/product/prodetail/{id}', [ProductController::class, 'show'])->name('product.show');
+
 // Route::get('/layouts/product/prodetail/{id}', function () {
 //     return view('layouts.product.prodetail');
 // });
 Route::controller(AboutController::class)->group(function () {
     Route::get('/layouts/about', 'index');
     Route::get('/admin/ManagePage/about', 'create')->name('about.create');
-    Route::post('/admin/ManagePage/about', 'store')->name('about.store');
-    Route::post('/admin/ManagePage/about', 'edit')->name('about.edit');
+    Route::post('/admin/ManagePage/about/store', 'store')->name('about.store');
+    Route::post('/admin/ManagePage/about/edit', 'edit')->name('about.edit');
 });
 Route::controller(BarController::class)->group(function () {
     Route::get('/layouts/bar', 'index');
@@ -175,13 +179,20 @@ Route::controller(TermsController::class)->group(function () {
     });
     Route::get('/admin/ManagePage/term', 'create')->name('term.create');
     Route::post('/admin/ManagePage/term/store', 'store')->name('term.store');
-    // Route::post('/admin/ManagePage/term/edit', 'edit')->name('term.edit');
+    Route::post('/admin/ManagePage/term/edit', 'edit')->name('term.edit');
 });
 Route::controller(PrivacyController::class)->group(function () {
     Route::get('/layouts/privacy', 'index');
     Route::get('/admin/ManagePage/privacy', 'create');
     Route::post('/admin/ManagePage/privacy/store', 'store')->name('privacy.store');
     Route::post('/admin/ManagePage/privacy/edit', 'edit')->name('privacy.edit');
-    Route::get('/admin/ManagePage/return', 'returncreate');
+    // Route::get('/admin/ManagePage/return', 'returncreate');
+});
+Route::controller(ReturnPolicyController::class)->group(function () {
+    Route::group(['prefix' => 'admin/ManagePage/return'], function () {
+        Route::get('/', 'index');
+        Route::post('/store', 'store')->name('return.store');
+        Route::post('/edit', 'edit')->name('return.edit');
+    });
 });
 

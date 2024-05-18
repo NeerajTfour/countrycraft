@@ -2,7 +2,9 @@
 <!-- ========== Start Section ========== -->
 @section('master')
     <div class="container py-5 ps-5">
-        <p class="text-secondary font14">
+        <div>{!! $privacy->text !!}</div>
+        {{-- {{ $privacy->text }} --}}
+        {{-- <p class="text-secondary font14">
             At Fab Texture, we value your privacy and are committed to protecting your personal
             information. This Privacy Policy outlines our practices with respect to the collection, use, and
             disclosure of your personal information in connection with your use of our website.
@@ -133,7 +135,7 @@
                     parties for research or analytics purposes.
                 </p>
             </li>
-        </ol>
+        </ol> --}}
     </div>
 @endsection
 <!-- ========== End Section ========== -->

@@ -12,8 +12,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $about = about::get();
-        return view('layouts.about.index');
+        $about = about::first();
+        return view('layouts.about.index', compact('about'));
     }
 
     /**
@@ -21,7 +21,8 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return view('admin.ManagePage.about');
+        $about = about::first();
+        return view('admin.ManagePage.about', compact('about'));
     }
 
     /**
@@ -29,7 +30,12 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $about = about::firstOrNew(['id' => $request->about_id]);
+        // $about = new about();
+        $about->about_text = $request->about_text;
+        $about->save();
+        return redirect('/admin/ManagePage/about')->with('success', 'about saved successfully.');
+
     }
 
     /**
@@ -43,9 +49,16 @@ class AboutController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(about $about)
+    public function edit(Request $request, about $about)
     {
-        //
+        $about = about::find($request->about);
+        if ($about) {
+            $about->text = $request->text;
+            $about->save();
+            return redirect('/admin/ManagePage/about')->with('success', 'Privacy policy updated successfully.');
+        } else {
+            return redirect('/admin/ManagePage/about')->with('error', 'Privacy policy not found.');
+        }
     }
 
     /**

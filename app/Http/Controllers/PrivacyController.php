@@ -12,7 +12,7 @@ class PrivacyController extends Controller
      */
     public function index()
     {
-        $privacy = privacy::get();
+        $privacy = privacy::first();
         return view('layouts.privacy.index', compact('privacy'));
     }
 
@@ -21,21 +21,22 @@ class PrivacyController extends Controller
      */
     public function create()
     {
-        return view('admin.ManagePage.privacy');
+        $privacy = privacy::first();
+        return view('admin.ManagePage.privacy', compact('privacy'));
     }
-    public function returncreate()
-    {
-        return view('admin.ManagePage.return');
-    }
+    // public function returncreate()
+    // {
+    //     return view('admin.ManagePage.return', compact(''));
+    // }
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        $privacy = new privacy;
+        $privacy = Privacy::firstOrNew(['id' => $request->privacy_id]);
         $privacy->text = $request->text;
         $privacy->save();
-        return back();
+        return redirect('/admin/ManagePage/privacy')->with('success', 'Privacy policy saved successfully.');
     }
 
     /**
@@ -51,13 +52,14 @@ class PrivacyController extends Controller
      */
     public function edit(Request $request, privacy $privacy)
     {
-        $privacy = privacy::find($request->privacy_id);
+        // dd($request);
+        $privacy = Privacy::find($request->privacy_id);
         if ($privacy) {
             $privacy->text = $request->text;
             $privacy->save();
-            return redirect('/admin/ManagePage/privacy');
+            return redirect('/admin/ManagePage/privacy')->with('success', 'Privacy policy updated successfully.');
         } else {
-            return redirect('/admin/ManagePage/privacy');
+            return redirect('/admin/ManagePage/privacy')->with('error', 'Privacy policy not found.');
         }
     }
 

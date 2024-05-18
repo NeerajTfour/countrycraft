@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="/assets/images/chair-black.png" />
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.0.0-alpha.12/lib.min.js"> --}}
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -46,10 +48,6 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        {{-- <h5 class="text-light text-center mt-4">
-                                <span>Daiwik Craftorium</span>
-                            </h5> --}}
-
                         <a href="/" class="logo logo-dark">
                             <span class="logo-sm">
                                 <img src="/assets/images/logo-black.png" alt="logo-sm-dark" height="22" />
@@ -70,41 +68,12 @@
                             </span>
                         </a>
                     </div>
-                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
-                        id="vertical-menu-btn">
-                        <i class="ri-menu-2-line align-middle"></i>
-                    </button>
-                    <!-- App Search-->
-                    {{-- <form class="app-search d-none d-lg-block">
-                        <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="Search..." />
-                            <span class="ri-search-line"></span>
-                        </div>
-                    </form> --}}
+
                 </div>
 
                 <div class="d-flex">
                     <div class="dropdown d-inline-block d-lg-none ms-2">
-                        <button type="button" class="btn header-item noti-icon waves-effect"
-                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="ri-search-line"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                            aria-labelledby="page-header-search-dropdown">
-                            <form class="p-3">
-                                <div class="mb-3 m-0">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search ..." />
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="submit">
-                                                <i class="ri-search-line"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+
                     </div>
                     <div class="dropdown d-inline-block user-dropdown">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
@@ -113,23 +82,40 @@
                             <img class="rounded-circle header-profile-user" src="/assets/images/images.jpg"
                                 alt="Header Avatar" width="50px" height="50px" />
                             <span class="d-none d-xl-inline-block ms-1">CountryCraft</span>
-                            {{-- <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i> --}}
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <!-- item-->
-                            {{-- <a class="dropdown-item" href=""><i
-                                    class="ri-user-line align-middle me-1"></i>
-                                Profile</a> --}}
+                        <div class="dropdown-menu dropdown-menu-right">
+                            {{-- <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
+                            <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
+                            <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a> --}}
                             {{-- <div class="dropdown-divider"></div> --}}
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                             document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         </div>
+                        {{-- <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div> --}}
+                        {{-- <div class="dropdown-menu dropdown-menu-end"> --}}
+                        <!-- item-->
+                        {{-- <a class="dropdown-item" href=""><i
+                                    class="ri-user-line align-middle me-1"></i>
+                                Profile</a> --}}
+                        {{-- <div class="dropdown-divider"></div> --}}
+                        {{-- </div> --}}
                     </div>
                 </div>
             </div>
@@ -146,8 +132,7 @@
 
                         <li>
                             <a href="/admin/dashboard" class="waves-effect">
-                                <i class="fa fa-bars"></i><span
-                                    class="badge rounded-pill bg-success float-end"></span>
+                                <i class="fa fa-bars"></i><span class="badge rounded-pill bg-success float-end"></span>
                                 <span>Dashboard</span>
                             </a>
                         </li>

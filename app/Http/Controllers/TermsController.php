@@ -22,7 +22,7 @@ class TermsController extends Controller
     public function create()
     {
         $terms = terms::first();
-        return view('admin.ManagePage.term');
+        return view('admin.ManagePage.term', compact('terms'));
     }
 
     /**

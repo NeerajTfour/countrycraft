@@ -5,7 +5,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <ol type="1" class="ms-3">
+                <p>{!! $terms->text !!}</p>
+
+                {{-- <ol type="1" class="ms-3">
                     <li>
                         <h6>Introduction</h6>
                         <p class="text-secondary font14">
@@ -97,7 +99,7 @@
                             the new Terms and Conditions.
                         </p>
                     </li>
-                </ol>
+                </ol> --}}
             </div>
         </div>
     </div>

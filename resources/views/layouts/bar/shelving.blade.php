@@ -15,7 +15,8 @@
                                 <span class="card-height">H: {{ $product->height }}</span>
                                 <span class="card-width">W : {{ $product->width }}</span>
                                 <span class="card-length">L : {{ $product->lenght }}</span> <br>
-                                <a href="/layouts/product/prodetail/{id}" class="btn btn-primary mt-3">Details</a>
+                                <a href="{{ route('product.show', ['id' => $product->id]) }}"
+                                    class="btn btn-primary mt-3">Details</a>
                             </div>
                         </div>
                     </div>

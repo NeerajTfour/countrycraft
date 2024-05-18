@@ -2,7 +2,7 @@
 
 @section('master')
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid bg-color ">
             <div class="row sticky-left mb-3">
                 <div class="col-md-2 pt-3 pro ">
                     <h6 class="ps-3">PRODUCT CATEGORIES</h6>

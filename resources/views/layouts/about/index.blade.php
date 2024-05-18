@@ -2,6 +2,7 @@
 
 @section('master')
     <section class="container-fluid">
+        {{-- <p> {!! $about->about_text !!}</p> --}}
         <div class="">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-12 about-banner">
@@ -18,7 +19,6 @@
                         is able to maintain the trend in an effective way which allow us to gain clients confidence. We are
                         committed to provide a workplace with best of the resources to our employees.
                     </p>
-                    {{-- <a href="/layouts/contact" type="submit" class="btn btn-md btn-dark mb-3 rounded-pill">Contact Us</a> --}}
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12 hover01">
                     <figure>
@@ -107,7 +107,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                     <div class="team-detail">
                         <div class="team-text factory-text text-muted lh-lg fst-italic ">
-                            {{-- <h4 class=" mb-20"></h4> --}}
+
                             <p> A furniture factory is a complex industrial facility that combines skilled
                                 craftsmanship
                                 with modern manufacturing techniques to produce a wide range of furniture products for
@@ -119,8 +119,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 div-order">
                     <div class="team-detail">
                         <div class="team-text factory-text text-muted lh-lg fst-italic">
-                            {{-- <h4 class="sub-title mb-20 "> <a href="" target="_blank" style="text-decoration: none">
-                                    Our Factory @ Boranada </a></h4> --}}
+
                             <p> Efficient operations, quality control measures, and an emphasis on sustainability are
                                 key
                                 considerations in the furniture development. This 33,000 Sq.Ft. facility is fully
@@ -146,19 +145,12 @@
             <div class="row ms-2 me-2 mb-3 heading text-muted">
                 <h1>T I M B E R &nbsp; M A N A G E M E N T</h1>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
-                    <figure class="text-center">
-                        <blockquote class="blockquote">
-                            <p>Timber management is a dynamic and
-                                interdisciplinary field that requires a
-                                holistic approach to balance economic,
-                                ecological, and social considerations.</p>
-                        </blockquote>
-                    </figure>
-                    {{-- <p class="pt-3 fst-italic">Timber management is a dynamic and
+
+                    <p class="pt-3 fst-italic">Timber management is a dynamic and
                         interdisciplinary field that requires a
                         holistic approach to balance economic,
                         ecological, and social considerations.
-                    </p> --}}
+                    </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-2 hover01">
                     <figure>
@@ -204,14 +196,14 @@
                 </div>
             </div>
             <div class="row ms-2 mb-3 hover01">
-                <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
-                    <figure>
-                        <img src="/assets/images/Picture25.jpg" alt="" width="100%" height="380px">
-                    </figure>
-                </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
                     <figure>
                         <img src="/assets/images/Picture3.jpg" alt="" width="100%" height="380px">
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
+                    <figure>
+                        <img src="/assets/images/Picture25.jpg" alt="" width="100%" height="380px">
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
@@ -221,7 +213,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="row ms-2 me-2 mb-3 text-muted heading bg-light">
+            <div class="row ms-2 me-2 mb-3 text-muted heading ">
                 <h1>C E R T I F I C A T I O N S</h1>
                 <div class="col-lg-4 lh-lg">
                     <p> <b>FSC {Forest Stewardship Council}</b> plays a crucial role in
@@ -254,7 +246,6 @@
                 <h1>P A C K A G I N G</h1>
                 <div class="col-md-12"></div>
             </div>
-        </div>
         </div>
     </section>
 @endsection
